@@ -17,6 +17,10 @@
 }
 
 /* --- General styles / same for all pages --- */
+html, body {
+	width:100%;
+	height:100%;
+}
 /* -- Fonts, colors etc. -- */
 body {
 	font-family:'Open Sans', sans-serif;
@@ -26,11 +30,36 @@ h1, h2, h3, h4 {
 }
 
 /* --- HEADER --- */
-
+#header {
+	height:60px;
+	background:#eee;
+}
+#header ul {
+	float:right;
+}
+#header li {
+	float:left;
+	list-style-type:none;
+}
+#header a {
+	display:block;
+	color:#0092b5;
+	text-decoration:none;
+	padding:18px 20px;
+}
+#header a:hover {
+	text-decoration:underline;
+}
 
 /* --- WRAPPER --- */
-
-
+.mainOuterWrapper {
+	width:100%;
+}
+.mainInnerWrapper {
+	width:960px;
+	min-height:100%;
+	margin:0 auto;
+}
 /* --- FOOTER --- */
 
 
@@ -48,3 +77,4 @@ h1, h2, h3, h4 {
 
 
 /* --- About Leonardo --- */
+
