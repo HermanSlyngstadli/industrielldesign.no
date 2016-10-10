@@ -23,12 +23,20 @@ html, body {
 }
 /* -- Fonts, colors etc. -- */
 body {
-    font-family:'Raleway', sans-serif;
+	font-family:'Raleway', sans-serif;
 }
 h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+a {
+	color:#0092b5;
+	text-decoration:none;
+	border-bottom:dashed 1px #C5D9DE;
+}
+a:hover {
+	border-bottom:solid 1px #0092b5;
 }
 
 /* --- HEADER --- */
@@ -45,12 +53,8 @@ h1, h2, h3, h4 {
 }
 #header a {
 	display:block;
-	color:#0092b5;
-	text-decoration:none;
-	padding:18px 20px;
-}
-#header a:hover {
-	text-decoration:underline;
+	padding:18px 20px; /*-------- width of header --------*/
+	border:0;
 }
 
 /* --- WRAPPER --- */
@@ -60,6 +64,7 @@ h1, h2, h3, h4 {
 .mainInnerWrapper {
 	width:960px;
 	min-height:100%;
+	padding-top:60px;	/*-------- width of header --------*/
 	margin:0 auto;
 }
 /* --- FOOTER --- */
