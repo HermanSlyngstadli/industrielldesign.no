@@ -5,4 +5,4 @@
 
 var footer = document.getElementById('footer');
 
-footer.innerHTML = '<div class="footer">footer går her</div>';
+footer.innerHTML = '<div class="footer">&nbsp;</div>';
