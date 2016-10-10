@@ -17,15 +17,34 @@
 }
 
 /* --- General styles / same for all pages --- */
+/* -- Fonts, colors etc. -- */
+body {
+	font-family:'Open Sans', sans-serif;
+}
+h1, h2, h3, h4 {
+	font-family:'Raleway', sans-serif;
+}
+
+/* --- HEADER --- */
 
 
-/* --- Browser Reset --- */
+/* --- WRAPPER --- */
 
 
-/* --- Browser Reset --- */
+/* --- FOOTER --- */
 
 
-/* --- Browser Reset --- */
+/* --- Page specific styles, for each site if any --- */
+/* --- Index --- */
 
 
-/* --- Browser Reset --- */
+/* --- Prosjketer DAWAI DAWAI--- */
+
+
+/* --- Student --- */
+
+
+/* --- Business --- */
+
+
+/* --- About Leonardo --- */
