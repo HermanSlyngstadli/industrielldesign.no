@@ -23,10 +23,12 @@ html, body {
 }
 /* -- Fonts, colors etc. -- */
 body {
-	font-family:'Open Sans', sans-serif;
+    font-family:'Raleway', sans-serif;
 }
 h1, h2, h3, h4 {
-	font-family:'Raleway', sans-serif;
+	font-family:'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
 /* --- HEADER --- */
