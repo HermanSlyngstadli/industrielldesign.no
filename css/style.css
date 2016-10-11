@@ -78,7 +78,12 @@ a:hover {
 
 
 /* --- Student --- */
-
+#eventSlider {
+	height:300px;
+	width:500px;
+	overflow: hidden;
+	position:relative;
+}
 
 /* --- Business --- */
 
@@ -114,4 +119,3 @@ a:hover {
     position: absolute;
     left: 5%;
 }
-
