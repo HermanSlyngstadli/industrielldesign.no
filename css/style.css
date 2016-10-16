@@ -67,6 +67,22 @@ a:hover {
 	padding-top:60px;	/*-------- width of header --------*/
 	margin:0 auto;
 }
+
+/*--- SECTION HEADER ---*/
+.sectionHeader {
+	width:100%;
+	height:400px;
+	background: #eee;
+	position:relative;
+	margin-bottom:30px;
+}
+.sectionTitle {
+	background: #fff;
+	padding:5px 10px;
+	position:absolute;
+	bottom:-20px;
+	left:40px;
+}
 /* --- FOOTER --- */
 
 
@@ -80,7 +96,7 @@ a:hover {
 /* --- Student --- */
 #eventSlider {
 	height:300px;
-	width:500px;
+	width:960px;
 	overflow: hidden;
 	position:relative;
 }
