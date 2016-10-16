@@ -41,8 +41,11 @@ a:hover {
 
 /* --- HEADER --- */
 #header {
+    position: fixed;
+    width: 100%;
 	height:60px;
 	background:#eee;
+    z-index: 1;
 }
 #header ul {
 	float:right;
@@ -112,12 +115,6 @@ a:hover {
 
 
 /* --- About Leonardo --- */
-
-.headerImage {
-    width: 100%;
-    height: 200px;
-}
-
 .introduksjon {
     margin-bottom: 200px;
 }
@@ -183,33 +180,73 @@ a:hover {
 }
 
 /* --- Tidslinje --- */
-#tidslinje {
-    width: 960px;
-}
-
-.vertikalTidslinje {
-    position: absolute;
-    left: 50%;
+.timeline {
+    position: relative;
+    margin: 200px auto;
     width: 6px;
-    height: 1200px;
     background-color: #0092b5;
-    margin: auto;
-    border-radius: 100px;
-}
-
-.historie {
-    height: auto;
-    width: 100%;
+    border-radius: 10px;
 }
 
 .timelineBlock {
-    width: 100%;
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
 }
 
-.timelineContent {
-    width: 50%;
+/* Linjen ut fra blokken */
+.timelineBlock::before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    height: 0;
+    border-style: solid;
+    border-color: #0092b5;
+    left: -100px;
+    width: 100px;
 }
 
-.timelineContent:nth-child(even) {
-    float: right;
+/* Rundingen på slutten av linjen */
+.timelineBlock::after {
+    content:'';
+    position: absolute;
+    top: 24px;
+    left: 0;
+    height: 5px;
+    width: 5px;
+    border: solid 3px #0092b5;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.timelineBlock:nth-child(even)::before {
+    width: 150px;
+    left: 450px;
+}
+
+.timelineBlock:nth-child(even)::after {
+    left: 440px;
+}
+
+.timelineBlock:nth-child(even) {
+    text-align: right;
+    position: relative;
+    left: -600px;
+}
+
+.timelineBlock:nth-child(odd) {
+    position: relative;
+    left: 100px;
+}
+
+.timeline h1 {
+    position: relative;
+    left: -53px;
+    width: 100px;
+    font-size: 3em;
+    color: #0092b5;
+    text-align: center;
+    background-color: #fff;
+    margin: 100px 0;
 }
