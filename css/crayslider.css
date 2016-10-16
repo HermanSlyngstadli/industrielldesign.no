@@ -1,0 +1,19 @@
+/*
+
+		CSS for Crayslider
+			by Herman Slyngstadli
+
+*/
+@charset="utf-8";
+
+.craysliderWrapper {
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.craysliderElement {
+	list-style-type:none;
+	float:left;
+	width:100%;
+	height:100%;
+}

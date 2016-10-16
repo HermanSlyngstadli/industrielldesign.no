@@ -15,6 +15,7 @@ fyll += '<meta name="keywords" content="arrangementer, student, bedriftspresenta
 fyll += '<meta name="author" content="Leonardo Linjeforening">';
 fyll += '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway" rel="stylesheet">';
 fyll += '<link rel="stylesheet" href="css/style.css">';
+fyll += '<link rel="stylesheet" href="css/crayslider.css">';
 
 
 head.innerHTML += fyll;
