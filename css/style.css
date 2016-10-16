@@ -134,14 +134,6 @@ a:hover {
     width: 50%;
 }
 
-<<<<<<< HEAD
 .timelineContent:nth-child(even) {
     float: right;
 }
-
-=======
-.historyEvent:nth-child(4n+4) {
-    position: absolute;
-    left: 5%;
-}
->>>>>>> b7269b966609e3a5bc57f7fb94a1a4bad4063336
