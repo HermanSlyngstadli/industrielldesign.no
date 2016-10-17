@@ -112,13 +112,31 @@ a:hover {
 }
 
 /* --- Business --- */
-article {
-	width: 500px;
+.bedriftWrapper {
+	overflow:auto;
 }
+.bedriftingress {
+	margin: 0px 0px 100px 0px;
+
+}
+.bedriftartikkel{
+	margin: 0px 0px 100px 0px;
+	float:left;
+	width:500px;
+}
+
 .rightFloat {
 	float: right;
-	
-	}
+}
+.rightFloat article{
+	margin-bottom: 100px;
+}
+.rightFloat ul{
+	list-style-type: none;
+}
+.bedkon{
+	color: #0092b5;
+}
 /* --- About Leonardo --- */
 .introduksjon {
     margin-bottom: 200px;
