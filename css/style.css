@@ -88,12 +88,42 @@ a:hover {
 
 .sectionTitle {
 	background: #fff;
-	padding:5px 10px;
-	position:absolute;
-	bottom:-20px;
-	left:40px;
+	padding: 5px 10px;
+	position: absolute;
+	bottom: -20px;
+	left: 40px;
 }
 /* --- FOOTER --- */
+#footer {
+    height: 200px;
+    width: 100%;
+    background-color: #343434;
+    color: #fff;
+    padding: 50px;
+}
+
+.footerLogo {
+    width: 80%;
+    height: 100px;
+    margin: auto;
+}
+
+.footerLogo div {
+    width: 33.33%;
+    display: inline;
+    float: right;
+}
+
+
+#footer p {
+    position: relative;
+    display: inline;
+}
+
+#footer p:nth-child(3) {
+    float: right;
+}
+
 
 
 /* --- Page specific styles, for each site if any --- */
@@ -206,6 +236,14 @@ a:hover {
     width: 100px;
     height: 100px;
     margin-right: 20px;
+}
+
+#komite article:nth-child(odd) > .komiteFoto {
+    float: right;
+}
+
+#komite article:nth-child(odd) > p {
+    padding-left: 120px;
 }
 
 /* --- Tidslinje --- */
