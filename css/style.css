@@ -73,11 +73,11 @@ a:hover {
 
 /*--- SECTION HEADER ---*/
 .sectionHeader {
-	width:100%;
-	height:400px;
+	width: 100%;
+	height: 400px;
 	background: #eee;
-	position:relative;
-	margin-bottom:30px;
+	position: relative;
+	margin-bottom: 100px;
 }
 
 .sectionHeader img {
