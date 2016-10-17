@@ -96,8 +96,7 @@ a:hover {
 /* --- FOOTER --- */
 #footer {
     height: 200px;
-    width: 100%;
-    background-color: #343434;
+    background-color: #2c2c2c;
     color: #fff;
     padding: 50px;
 }
@@ -109,21 +108,54 @@ a:hover {
 }
 
 .footerLogo div {
-    width: 33.33%;
-    display: inline;
-    float: right;
+    position: absolute;
 }
 
+.footerLogo div svg {
+    width: 100px;
+    height: auto;
+}
 
-#footer p {
+.footerLogo div:nth-child(1) {
+    left: 250px;
+}
+
+.footerLogo div:nth-child(2) {
+    left: 49%;
+}
+
+.footerLogo div:nth-child(3) {
+    right: 250px;
+}
+
+.footerLeft, .footerRight {
     position: relative;
-    display: inline;
+    top: 60px;
 }
 
-#footer p:nth-child(3) {
+.footerLeft {
+    float: left;
+}
+
+.footerRight {
     float: right;
 }
 
+#footer a {
+    border-bottom: none;
+}
+
+/* Fargen på ikonene */
+.socialLogo {
+    fill: #fff;
+    stroke-width: 5px;
+    stroke: transparent;
+}
+
+/* Fargeendring under hovring */
+.socialLogo:hover * {
+    fill: #cbcbcb
+}
 
 
 /* --- Page specific styles, for each site if any --- */
@@ -205,7 +237,7 @@ a:hover {
 .sitatBoks {
     background-color: #0092b5;
     height: 100px;
-    width: 100%;
+    width: 80%;
     padding: 40px 80px 20px 100px;
     text-align: right;
     color: white;
