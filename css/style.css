@@ -112,7 +112,13 @@ a:hover {
 }
 
 /* --- Business --- */
-
+.rightFloat {
+	float: right;
+	
+	}
+article {
+	width: 500px;
+}
 
 /* --- About Leonardo --- */
 .introduksjon {
