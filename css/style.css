@@ -112,14 +112,13 @@ a:hover {
 }
 
 /* --- Business --- */
+article {
+	width: 500px;
+}
 .rightFloat {
 	float: right;
 	
 	}
-article {
-	width: 500px;
-}
-
 /* --- About Leonardo --- */
 .introduksjon {
     margin-bottom: 200px;
