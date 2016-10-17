@@ -186,7 +186,9 @@ a:hover {
 	float:left;
 	width:500px;
 }
-
+#bedtlf{
+	font-size: 11px;
+}
 .rightFloat {
 	float: right;
 }
