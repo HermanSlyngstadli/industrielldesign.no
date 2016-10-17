@@ -179,6 +179,35 @@ a:hover {
     float: right;
 }
 
+/* --- Komiteene --- */
+#komite article {
+    padding-bottom: 300px;
+}
+
+
+
+.komiteTittel {
+    font-weight: 400;
+    font-size: 5em;
+    
+}
+
+.komiteFoto {
+    position: relative;
+    top: 50px;
+    left: -40px;
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.komiteLogo {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
 /* --- Tidslinje --- */
 .timeline {
     position: relative;
