@@ -130,7 +130,7 @@ a:hover {
 	left: 40px;
 }
 /* --- FOOTER --- */
-#footer {
+#footer {   
     height: 200px;
     background-color: #2c2c2c;
     color: #fff;
@@ -138,30 +138,21 @@ a:hover {
 }
 
 .footerLogo {
-    width: 80%;
+    width: 100%;
     height: 100px;
     margin: auto;
 }
 
 .footerLogo div {
-    position: absolute;
+    display: inline-block;
+    width: 33.33%;
 }
 
 .footerLogo div svg {
+    display: block;
     width: 100px;
     height: auto;
-}
-
-.footerLogo div:nth-child(1) {
-    left: 250px;
-}
-
-.footerLogo div:nth-child(2) {
-    left: 49%;
-}
-
-.footerLogo div:nth-child(3) {
-    right: 250px;
+    margin: auto;
 }
 
 .footerLeft, .footerRight {
