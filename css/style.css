@@ -60,6 +60,42 @@ a:hover {
 	border:0;
 }
 
+/* --- LOGO --- */
+#logoWrapper {
+    height:60px;
+    width:60px;
+}
+#logoBackground {
+    height:100%;
+    width:100%;
+    background:#0092b5;
+    position:relative;
+}
+#elVertical {
+    width:20%;
+    height:60%;
+    background:#fff;
+    position:absolute;
+    left:20%;
+    top:20%;
+}
+#elHorisontal {
+    height:20%;
+    width:60%;
+    background:#fff;
+    position:absolute;
+    left:20%;
+    top:60%;
+}
+#elDot {
+    height:20%;
+    width:20%;
+    background:#fff;
+    position:absolute;
+    left:60%;
+    top:20%;
+}
+
 /* --- WRAPPER --- */
 .mainOuterWrapper {
 	width:100%;
