@@ -200,6 +200,13 @@ a:hover {
 	position:relative;
 }
 
+/* --- WikiArticle --- */
+.wikiinfo{
+	width: auto;
+	margin: 100px 150px;
+	position: center;
+}
+
 /* --- Business --- */
 .bedriftWrapper {
 	overflow:auto;
