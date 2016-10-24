@@ -16,6 +16,7 @@ fyll += '<meta name="author" content="Leonardo Linjeforening">';
 fyll += '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800|Raleway" rel="stylesheet">';
 fyll += '<link rel="stylesheet" href="css/style.css">';
 fyll += '<link rel="stylesheet" href="css/crayslider.css">';
+fyll += '<link rel="icon" type="image/png" href="http://industrielldesign.com/wp-content/uploads/2013/10/leonardo-logo-60x60.png">';
 
 
 head.innerHTML += fyll;
