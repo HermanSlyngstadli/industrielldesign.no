@@ -3,22 +3,43 @@
 //		by Tobias Wulvik
 //
 
-// Laster inn tagene til variabler
-var paragraph = document.getElementById("articleP");
-var title = document.getElementsByClassName("sectionTitle")[0];
-var image = document.getElementById("articlePhoto");
-console.log(image)
+var artikkel = 0;
 
-function readXML() {
+/*var xml = new XMLHttpRequest();
+xml.onreadystatechange = function () {
+    if (this.readyState === 4 && this.status === 200) {
+        updateArticle(this);
+    }
+};
 
-    var xml = new XMLHttpRequest();
-    xml.open("GET", "wikiArtikler.xml", false);
-    xml.send();
+xml.open("GET", "wikiArtikler.xml", false);
+xml.send();*/
 
-    var xmlData = xml.responseText;
-    document.write(xmlData);
+// Array med titlene fra xml-dokumentet
+var alleArtikkelTitler = ["laserkutter", "rød benk", "sag", "styret"];
+
+// Array med titlene fra xml-dokumentet
+var alleArtikkelP = ["1Dette er en paragraf", "2Dette er en paragraf", "3Dette er en paragraf", "4Dette er en paragraf"];
+
+// Skal være det faktiske søket
+var sok = "Sag";
+
+function sokArticle() {
     
-
+    sok = sok.toLowerCase().trim();
+    // alleArtikkelTitler = array fra xml med alle titler
+    var artikkelIndex = alleArtikkelTitler.indexOf(sok);
+    return artikkelIndex;
 }
 
-readXML()
+function updateArticle() {
+    
+    var artikkel = sokArticle(sok, alleArtikkelTitler);
+    
+    document.getElementsByClassName("sectionTitle")[0].innerHTML = alleArtikkelTitler[artikkel];
+
+    document.getElementById("articleP").innerHTML = alleArtikkelP[artikkel];
+    
+}
+
+updateArticle();
