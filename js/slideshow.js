@@ -59,7 +59,7 @@ window.onload = function() {
 
 	slider.appendChild(craysliderWrapper);
 
-
+	//var autoSlide = setTimeout(pushIt('right'), 2000);
 }
 
 function createSliderElements() {
