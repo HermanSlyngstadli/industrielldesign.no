@@ -24,6 +24,7 @@ var slider = document.getElementById(sliderId);
 var slides;
 var currentSlide = 1; // Sets the startslide of the slider
 var currentPreview = 1; // Set first preview element
+var previewSlide = true;
 
 // START temporary database of events
 function happening(image, title, text, date, time, location) {
@@ -58,7 +59,7 @@ window.onload = function() {
 
 	slider.appendChild(craysliderWrapper);
 
-
+	//var autoSlide = setTimeout(pushIt('right'), 2000);
 }
 
 function createSliderElements() {
@@ -103,3 +104,6 @@ function changeSlide() {
 
 }
 
+function linearEase(position) {
+
+}
