@@ -19,7 +19,6 @@ var slidesOnEachPage = 3;
 
 var slider = document.getElementById(sliderId);
 var sliderFocused = document.getElementById(focusedSlideWrapperId);
-var sliderElementWrapper;
 
 var slides;
 var currentSlide = 1; // Sets the startslide of the slider
@@ -95,6 +94,17 @@ function createSliderElements() {
 	}
 }
 
+function createButtons() {
+	var rightButton = document.createElement('a');
+	var leftButton = document.createElement('a');
+
+	rightButton.className = 'crayslider-rightButton';
+	leftButton.className = 'crayslider-leftButton';
+	
+	slider.appendChild(rightButton);
+	slider.appendChild(leftButton);
+}
+
 function pushIt(direction) {
 	if(direction === 'left' && currentSlide > 1) {
 		//craysliderWrapper.style.left = 100*(currentSlide-2) + '%';
@@ -120,8 +130,6 @@ function nesteStop(position) {
 	} else {
 		return;
 	}
-
-	
 }
 
 function makeElementsClickable() {
