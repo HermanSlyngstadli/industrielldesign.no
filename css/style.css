@@ -199,6 +199,10 @@ a:hover {
 	overflow: hidden;
 	position:relative;
 }
+#focusedEvent {
+            height:500px;
+            width:100%;
+}
 
 /* --- Wiki - trekkspillmeny --- */
 button.accordion {

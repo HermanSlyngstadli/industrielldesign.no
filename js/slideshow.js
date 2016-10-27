@@ -13,20 +13,20 @@
 */
 
 // Init
-var sliderWrapperId = 'eventSlider';
 var sliderId = 'eventSlider';
-var focusedSlide = 'focusedEvent';
+var focusedSlideWrapperId = 'focusedEvent';
 var slidesOnEachPage = 3;
 
-var sliderWrapper = document.getElementById(sliderWrapperId);
 var slider = document.getElementById(sliderId);
+var sliderFocused = document.getElementById(focusedSlideWrapperId);
+var sliderElementWrapper;
 
 var slides;
 var currentSlide = 1; // Sets the startslide of the slider
-var currentPreview = 1; // Set first preview element
+var currentPreview = 0; // Set first preview element
 var previewSlide = true;
 
-// START temporary database of events
+// START ===== temporary database of events
 function happening(image, title, text, date, time, location) {
 	this.image = image;
 	this.title = title;
@@ -42,12 +42,13 @@ var slide3 = new happening('','Festfest','Det er festfest på huset i år også!
 var slide4 = new happening('','Halloween','Det er halloweenfest på huset i år også!','29.10','20:00','IPD');
 
 slides = [slide1, slide2, slide3, slide4];
-// END temporary database of events
+// ==== END temporary database of events
 
 
 // Create a sliderWrapper
 var craysliderWrapper = document.createElement('ul');
-craysliderWrapper.className='craysliderWrapper';
+craysliderWrapper.className='craysliderWrapper'; // For styling off all sliders
+craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For identification of specific slider
 
 // Adjust the size of the slides and the slidewrapper
 craysliderWrapper.style.width = 100*slides.length + '%';
@@ -56,10 +57,14 @@ craysliderWrapper.style.width = 100*slides.length + '%';
 window.onload = function() {
 	// Make slides and append them to the DOM
 	createSliderElements();
+	makeElementsClickable();
+
+	if (previewSlide == true) {
+		createPreviewElements();
+	}
 
 	slider.appendChild(craysliderWrapper);
 
-	//var autoSlide = setTimeout(pushIt('right'), 2000);
 }
 
 function createSliderElements() {
@@ -92,18 +97,84 @@ function createSliderElements() {
 
 function pushIt(direction) {
 	if(direction === 'left' && currentSlide > 1) {
-		craysliderWrapper.style.left = 100*(currentSlide-2) + '%';
+		//craysliderWrapper.style.left = 100*(currentSlide-2) + '%';
 		currentSlide--;
 	} else if(direction === 'right' && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
-		craysliderWrapper.style.left = -100*currentSlide + '%';
+		linearEase(100);
+		//craysliderWrapper.style.left = -100*currentSlide + '%';
 		currentSlide++;
 	}
 }
-
-function changeSlide() {
-
-}
+var prosent = 0;
 
 function linearEase(position) {
+	nesteStop(position);
+}
 
+function nesteStop(position) {
+	if (prosent <= position) {
+		console.log(prosent);
+		craysliderWrapper.style.left = prosent + '%';
+		prosent += 2;
+		setTimeout(function() {nesteStop(position);}, 20);
+	} else {
+		return;
+	}
+
+	
+}
+
+function makeElementsClickable() {
+	for (var i = 0; i < craysliderWrapper.children.length; i++) {
+		(function(i){
+			craysliderWrapper.children[i].onclick = function(){
+				changePreviewSlide(i);
+			}
+		})(i);
+	}
+}
+
+function changePreviewSlide(slide) {
+	var header = document.getElementById('crayslider-previewContentText-header'+'-'+sliderId);
+	var description = document.getElementById('crayslider-previewContentText-description'+'-'+sliderId);
+	var picture = document.getElementById('crayslider-previewContentPicture'+'-'+sliderId);
+
+	header.innerHTML = slides[slide].title;
+	description.innerHTML = slides[slide].text;
+	picture.innerHTML = slides[slide].image;
+}
+
+function createPreviewElements() {
+	var previewElementWrapper = document.createElement('div');
+	previewElementWrapper.className = 'crayslider-previewElementWrapper';
+
+	var previewContentText = document.createElement('div');
+	previewContentText.className = 'crayslider-previewContentText';
+
+	var previewHeader = document.createElement('h4');
+	previewHeader.className = 'crayslider-previewContentText-header';
+	previewHeader.id = previewHeader.className + '-' + sliderId;
+	
+	var previewDescription = document.createElement('div');
+	previewDescription.className = 'crayslider-previewContentText-description';
+	previewDescription.id = previewDescription.className + '-' + sliderId;
+
+	
+	var previewIcon = document.createElement('div');
+	previewIcon.className = 'crayslider-previewContentText-icons';
+
+	previewContentText.appendChild(previewHeader);
+	previewContentText.appendChild(previewIcon);
+	previewContentText.appendChild(previewDescription);
+
+	// ====================================== Fix real pictures!!
+	var previewContentPicture = document.createElement('div');
+	previewContentPicture.className='crayslider-previewContentPicture';
+	previewContentPicture.id='crayslider-previewContentPicture'+'-'+sliderId;
+	// =================================================
+
+	previewElementWrapper.appendChild(previewContentText);
+	previewElementWrapper.appendChild(previewContentPicture);
+
+	sliderFocused.appendChild(previewElementWrapper);
 }

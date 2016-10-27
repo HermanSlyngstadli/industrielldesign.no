@@ -13,7 +13,24 @@
 }
 .craysliderElement {
 	list-style-type:none;
+	display:block;
 	float:left;
 	width:100%;
 	height:100%;
+}
+.crayslider-previewElementWrapper {
+	height:100%;
+	width:100%;
+}
+.crayslider-previewContentText {
+	height:100%;
+	width:30%;
+	float:left;
+	background: #eee;
+}
+.crayslider-previewContentPicture {
+	height:100%;
+	width:70%;
+	float:left;
+	background:#ddd;
 }
