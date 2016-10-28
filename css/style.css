@@ -200,7 +200,7 @@ a:hover {
 	position:relative;
 }
 #focusedEvent {
-            height:500px;
+            height:400px;
             width:100%;
 }
 
@@ -227,6 +227,15 @@ div.panel {
 div.panel.show {
     display: block;
 }
+
+.verksted, .programmer, .laerere {
+	width: 33%;
+	display: inline-block;
+	margin: auto;
+	list-style-position: inside;
+}
+
+
 
 /* --- WikiArticle --- */
 .wikiinfo{
