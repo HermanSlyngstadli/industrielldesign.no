@@ -65,8 +65,6 @@ window.onload = function() {
 	createSliderElements();
 	makeElementsClickable();
 
-
-
 	if (previewSlide == true) {
 		createPreviewElements();
 	}
@@ -102,17 +100,6 @@ function createSliderElements() {
 		craysliderWrapper.appendChild(craysliderElement);
 		
 	}
-}
-
-function createButtons() {
-	var rightButton = document.createElement('a');
-	var leftButton = document.createElement('a');
-
-	rightButton.className = 'crayslider-rightButton';
-	leftButton.className = 'crayslider-leftButton';
-	
-	slider.appendChild(rightButton);
-	slider.appendChild(leftButton);
 }
 
 function pushIt(direction) {
@@ -205,6 +192,7 @@ function createSliderArrows() {
 	rightArrow.className = 'crayslider-nav crayslider-nav-right';
 	leftArrow.className = 'crayslider-nav crayslider-nav-left';
 
-	slider.appendChild(rightArrow);
-	slider.appendChild(leftArrow);
+	var sliderParent = slider.parentElement;
+	sliderParent.appendChild(rightArrow);
+	sliderParent.appendChild(leftArrow);
 }
