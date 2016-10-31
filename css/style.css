@@ -101,10 +101,16 @@ a:hover {
 	width:100%;
 }
 .mainInnerWrapper {
-	width:960px;
+	width:100%;
 	min-height:100%;
 	padding-top:60px;	/*-------- width of header --------*/
 	margin:0 auto;
+}
+
+/* Gjør teksten sentrert og 960px bred. Bruk på alle artikler */
+.centerText, #komite article {
+	width: 960px;
+	margin: auto;
 }
 
 /*--- SECTION HEADER ---*/

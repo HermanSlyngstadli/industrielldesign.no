@@ -19,10 +19,10 @@ var sok = "Sag";
 
 function sokArticle() {
     
-    sok = sok.toLowerCase().trim();
-    // alleArtikkelTitler = array fra xml med alle titler
-    var artikkelIndex = alleArtikkelTitler.indexOf(sok);
-    return artikkelIndex;
+	sok = sok.toLowerCase().trim();
+	// alleArtikkelTitler = array fra xml med alle titler
+	var artikkelIndex = alleArtikkelTitler.indexOf(sok);
+	return artikkelIndex;
 }
 
 function updateArticle() {
