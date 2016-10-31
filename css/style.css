@@ -19,7 +19,6 @@
 /* --- General styles / same for all pages --- */
 html, body {
 	width:100%;
-	height:100%;
 }
 /* -- Fonts, colors etc. -- */
 body {
@@ -123,8 +122,10 @@ a:hover {
 }
 
 .sectionHeader img {
+	display: block;
     height: 100%;
-    width: 100%;
+    width: auto;
+	margin: auto;
     overflow: hidden;
 }
 
@@ -206,8 +207,53 @@ a:hover {
 	position:relative;
 }
 #focusedEvent {
-            height:400px;
-            width:100%;
+	height:400px;
+	width: 100%;
+}
+
+
+.searchField {
+	position: relative;
+	width: 400px;
+	margin: 200px auto;
+	margin-bottom: 500px;
+}
+
+#wikiSok[type=text] {
+	display: block;
+	width: 80%;
+	float: right;
+	border: none;
+	background-color: 0;
+	font-size: 3em;
+}
+
+#wikiSok[type=text]:focus {
+	outline: none;
+}
+
+/* Forstørrelsesglass runding */
+.sokIkon::before {
+	content: '';
+    position: absolute;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #666;
+	border-radius: 100%;
+	margin-left: auto;
+}
+
+/* Forstørrelsesglass strek */
+.sokIkon::after {
+	content: '';
+	position: absolute;
+	top: 32px;
+	left: 46px;
+	height: 30px;
+	width: 2px;
+	transform: rotate(135deg);
+	background-color: #666;
+	
 }
 
 /* --- Wiki - trekkspillmeny --- */
@@ -319,9 +365,10 @@ div.panel.show {
 }
 
 .sitatBoks {
+	box-sizing: border-box;
     background-color: #0092b5;
-    height: 100px;
-    width: 80%;
+    height: 200px;
+    width: 100%;
     padding: 40px 80px 20px 100px;
     text-align: right;
     color: white;
