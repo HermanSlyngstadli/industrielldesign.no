@@ -18,7 +18,7 @@ var arr = [{tittel:"R", url:"http://www.vg.no"},{tittel:"A", url:""},
 			{tittel:"H", url:""},{tittel:"I", url:""},
 			{tittel:"L", url:""},{tittel:"D", url:""}]
 			
-for (i=0; i<=arr.length; i++){
+for (i=0; i<arr.length; i++){
 	var fyll = '<a href="' + arr[i].tittel + '">' + arr[i].tittel + '</a>';
 	document.getElementById('verksted').innerHTML += '<li>' + fyll + '</li>';
 	document.getElementById('programmer').innerHTML += '<li>' + fyll + '</li>';
