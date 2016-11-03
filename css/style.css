@@ -38,6 +38,11 @@ a:hover {
 	border-bottom:solid 1px #0092b5;
 }
 
+::selection {
+	background-color: rgb(233,79,148);
+	color: #fff;
+}
+
 /* --- HEADER --- */
 #header {
     position: fixed;
@@ -320,13 +325,17 @@ div.panel.show {
 .bedkon{
 	color: #0092b5;
 }
+
+
 /* --- About Leonardo --- */
 .introduksjon {
     margin-bottom: 200px;
+	width: 80%;
 }
-
 .styrePost {
-    margin: 100px 0px 100px 0px;
+	width: 960px;
+	margin: 200px auto;
+	margin-bottom: 0;
 }
 
 .styrePost > p {
@@ -340,16 +349,15 @@ div.panel.show {
     text-transform: none;
     
 }
-
 .styreBilde {
     position: relative;
-    top: 80px;
+    top: 0px;
     float: left;
     height: 300px;
     width: auto;
     margin-right: 20px;
+	z-index: -1;
 }
-
 .styreNavn {
     font-weight: 400;
     text-transform: none;
@@ -360,38 +368,77 @@ div.panel.show {
     background-color: #0092b5;
     height: 200px;
     width: 100%;
+	margin: 0;
     padding: 40px 80px 20px 100px;
     text-align: right;
     color: white;
     font-size: 1.2em;
-    
+	text-align: center;
+	z-index: 3;
 }
 
-.styrePost:nth-child(even) {
+/*
+.styrePost:nth-child(odd) {
     text-align: right;
 }
 
-.styrePost:nth-child(even) > p {
+.styrePost:nth-child(odd)  p {
     padding-right: 300px;
     padding-left: 20px;
 }
 
-.styrePost:nth-child(even) > .sitatBoks {
+.sitatBoks:nth-child(odd){
     text-align: left;
     padding-left: 80px;
     padding-right: 100px;
 }
 
-.styrePost:nth-child(even) > .styreBilde {
+.styrePost:nth-child(odd) > .styreBilde {
     float: right;
+}
+*/
+
+@media screen and (max-width: 960px) {
+	
+	.styrePost {
+		width: 100%;
+	}
+	
+	.styrePost p {
+		width: 50%;	
+	}
+	
+	.introduksjon {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	
+	.styrePost {
+		width: 100%;
+	}
+	
+	.styreBilde {
+		display: none;
+		float: none;
+	}
+	
+	.styreNavn {
+		margin-left: 5%;
+	}
+	.styrePost p {
+		padding: 0;
+		padding-bottom: 2%;
+		margin-left: 5%;
+		width: 80%;
+	}
 }
 
 /* --- Komiteene --- */
 #komite article {
-    padding-bottom: 300px;
+    margin-bottom: 300px;
 }
-
-
 
 .komiteTittel {
     font-weight: 400;
@@ -421,6 +468,21 @@ div.panel.show {
 
 #komite article:nth-child(odd) > p {
     padding-left: 120px;
+}
+
+@media screen and (max-width:768px) {
+	#komite article {
+		float: none;
+	}
+	
+	#komite article {
+		padding-left: 20px;
+		width: 80%;
+	}
+	
+	.komiteFoto {
+		display: none;
+	}
 }
 
 /* --- Tidslinje --- */
@@ -464,6 +526,8 @@ div.panel.show {
     background-color: #fff;
 }
 
+@media screen and (min-width:1240px) {
+
 .timelineBlock:nth-child(even)::before {
     width: 150px;
     left: 450px;
@@ -482,6 +546,8 @@ div.panel.show {
 .timelineBlock:nth-child(odd) {
     position: relative;
     left: 100px;
+}
+	
 }
 
 .timeline h1 {
