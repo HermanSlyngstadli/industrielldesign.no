@@ -23,6 +23,7 @@
 /* --- General styles / same for all pages --- */
 html {
     font-size:18px;
+    overflow-x: hidden;
 }
 html, body {
 	width:100%;
