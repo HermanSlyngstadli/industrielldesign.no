@@ -1,0 +1,8 @@
+Kanskje
+
+1. Parallaxing i styrepostene
+2. Bakgrunnsgeometri for å pimpe det opp.
+
+
+Responsive bredder
+768px og 1240px. Alt under 1240px skal justeres flytende
