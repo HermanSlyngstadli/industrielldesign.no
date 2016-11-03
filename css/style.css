@@ -337,10 +337,11 @@ div.panel.show {
 
 .styrePost {
     margin: 100px 0px 100px 0px;
+	padding: 0 150px;
 }
 
 .styrePost > p {
-    padding: 10px 0px 20px 300px;
+    padding: 10px 0px 20px 200px;
 }
 
 .styreTittel {
@@ -348,12 +349,12 @@ div.panel.show {
     font-size: 3em;
     font-weight: 400;
     text-transform: none;
-    
 }
 
 .styreBilde {
     position: relative;
-    top: 80px;
+	left: 10%;
+    top: 120px;
     float: left;
     height: 300px;
     width: auto;
