@@ -349,12 +349,19 @@ div.panel.show {
 /* --- About Leonardo --- */
 .introduksjon {
     margin-bottom: 200px;
-	width: 80%;
-}
-.styrePost {
 	width: 960px;
-	margin: 200px auto;
+}
+
+@media screen and (max-width:960px) {
+    .introduksjon {
+        width: 80%;
+    }
+}
+
+.styrePost {
+	margin: 400px auto;
 	margin-bottom: 0;
+    height: 300px;
 }
 
 .styrePost > p {
@@ -370,7 +377,6 @@ div.panel.show {
 }
 .styreBilde {
     position: relative;
-    top: 0px;
     float: left;
     height: 300px;
     width: auto;
@@ -385,7 +391,7 @@ div.panel.show {
 .sitatBoks {
 	box-sizing: border-box;
     background-color: #0092b5;
-    height: 200px;
+    min-height: 100px;
     width: 100%;
 	margin: 0;
     padding: 40px 80px 20px 100px;
@@ -396,46 +402,57 @@ div.panel.show {
 	z-index: 3;
 }
 
-/*
-.styrePost:nth-child(odd) {
-    text-align: right;
+@media screen and (min-width: 1240px) {
+    .styrePost {
+        width: 960px;
+    }
 }
 
-.styrePost:nth-child(odd)  p {
-    padding-right: 300px;
-    padding-left: 20px;
+@media screen and (min-width:768px) {
+    
+    #styret article:nth-child(odd) .styreBilde {
+        position: relative;
+        float: right;
+        margin-left: 60px;
+    }
+
+    #styret article:nth-child(odd)  .styrePost {
+            text-align: right;
+            width: 1240px;
+    }
+
+    #styret article:nth-child(odd)  .styrePost p {
+        text-align: left;
+        padding-right: 350px;
+    }
 }
 
-.sitatBoks:nth-child(odd){
-    text-align: left;
-    padding-left: 80px;
-    padding-right: 100px;
-}
+@media screen and (max-width:1240px) and (min-width:768px) {
+    
+    .styrePost {
+        width: 100%;
+    }
+    
+    #styret article:nth-child(odd) .styrePost {
+        width: 100%;
+    }
+    
+    #styret article:nth-child(odd) .styrePost p {
+        padding-left: 10%;
+    }
+    
+    #styret article:nth-child(odd) .styrePost p, #styret article:nth-child(even) .styrePost p {
+        width: 60%;
+    }
 
-.styrePost:nth-child(odd) > .styreBilde {
-    float: right;
-}
-*/
-
-@media screen and (max-width: 960px) {
-	
-	.styrePost {
-		width: 100%;
-	}
-	
-	.styrePost p {
-		width: 50%;	
-	}
-	
-	.introduksjon {
-		width: 80%;
-	}
 }
 
 @media screen and (max-width: 768px) {
-	
+    
 	.styrePost {
-		width: 100%;
+        padding: 0;
+        text-align: left;
+        height: auto;
 	}
 	
 	.styreBilde {
@@ -446,15 +463,21 @@ div.panel.show {
 	.styreNavn {
 		margin-left: 5%;
 	}
+    
 	.styrePost p {
 		padding: 0;
 		padding-bottom: 2%;
 		margin-left: 5%;
 		width: 80%;
+        margin-right: 5%;
 	}
 }
 
 /* --- Komiteene --- */
+#komite header {
+    margin-top: 200px;
+}
+
 #komite article {
     margin-bottom: 300px;
 }
@@ -481,15 +504,17 @@ div.panel.show {
     margin-right: 20px;
 }
 
-#komite article:nth-child(odd) > .komiteFoto {
-    float: right;
+@media screen and (min-width:1080px) {
+    #komite article:nth-child(odd) > .komiteFoto {
+        float: right;
+    }
+    
+    #komite article:nth-child(odd) > p {
+        width: 62%;
+    }
 }
 
-#komite article:nth-child(odd) > p {
-    padding-left: 120px;
-}
-
-@media screen and (max-width:768px) {
+@media screen and (max-width:1080px) {
 	#komite article {
 		float: none;
 	}
@@ -525,9 +550,8 @@ div.panel.show {
     content: '';
     position: absolute;
     top: 28px;
-    height: 0;
-    border-style: solid;
-    border-color: #0092b5;
+    height: 3px;
+    background-color: #0092b5;
     left: -100px;
     width: 100px;
 }
@@ -547,24 +571,26 @@ div.panel.show {
 
 @media screen and (min-width:1240px) {
 
-.timelineBlock:nth-child(even)::before {
-    width: 150px;
-    left: 450px;
-}
+    .timelineBlock:nth-child(even)::before {
+        width: 150px;
+        left: 450px;
+    }
 
-.timelineBlock:nth-child(even)::after {
-    left: 440px;
-}
+    .timelineBlock:nth-child(even)::after {
+        left: 440px;
+    }
 
-.timelineBlock:nth-child(even) {
-    text-align: right;
-    position: relative;
-    left: -600px;
-}
+    .timelineBlock:nth-child(even) {
+        text-align: right;
+        position: relative;
+        left: -600px;
+    }
 
-.timelineBlock:nth-child(odd) {
-    position: relative;
-    left: 100px;
+    .timelineBlock:nth-child(odd) {
+        position: relative;
+        left: 100px;
+    }
+
 }
 
 .timeline h1 {
@@ -576,4 +602,43 @@ div.panel.show {
     text-align: center;
     background-color: #fff;
     margin: 100px 0;
+}
+
+
+
+@media screen and (max-width: 1240px) {
+	.timelineBlock::before {
+		width: 50px;
+		left: 450px;
+	}
+
+	.timelineBlock::after {
+		left: 440px;
+	}
+
+	.timelineBlock {
+		text-align: right;
+		position: relative;
+		left: -500px;
+	}
+	
+	.timeline {
+		margin-right: 20%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	
+    .timelineBlock {
+        width: 80vw;
+    }
+    
+    .timeline h1 {
+        position: absolute;
+        left: -120px;
+    }
+    
+	.timeline {
+		margin-right: 0;
+	}
 }
