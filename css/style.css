@@ -11,12 +11,19 @@
 */
 
 /* --- Browser Reset --- */
-* {
+*, *:before, *:after {
 	margin:0;
 	padding:0;
+    /*
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
 }
 
 /* --- General styles / same for all pages --- */
+html {
+    font-size:18px;
+}
 html, body {
 	width:100%;
 }
@@ -28,6 +35,9 @@ h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
 	font-weight: 800;
 	text-transform: uppercase;
+}
+h2 {
+    z-index:2;
 }
 a {
 	color: #0092b5;
@@ -50,7 +60,7 @@ a:hover {
     width: 100%;
     height:60px;
     background:#eee;
-    z-index: 1;
+    z-index: 3;
 }
 #header ul {
 	float:right;
@@ -110,10 +120,20 @@ a:hover {
 /*--- SECTION HEADER ---*/
 .sectionHeader {
 	width: 100%;
-	height: 70vh;
+	height:32rem;
 	background: #eee;
+    background-size: cover;
+    background-position: 50% 50%;
 	position: relative;
 	margin-bottom: 100px;
+}
+.sectionHeader:after {
+    width:100%;
+    height:100%;
+    position:absolute;
+    content:'';
+    z-index:1;
+    background-color:rgba(70,151,179,.1);
 }
 
 .sectionHeader img {
@@ -220,7 +240,6 @@ a:hover {
 	width: 80%;
 	float: right;
 	border: none;
-	background-color: 0;
 	font-size: 3em;
 }
 
@@ -546,8 +565,6 @@ div.panel.show {
 .timelineBlock:nth-child(odd) {
     position: relative;
     left: 100px;
-}
-	
 }
 
 .timeline h1 {
