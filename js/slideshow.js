@@ -46,11 +46,18 @@ var slide4 = new happening('','Halloween','Det er halloweenfest på huset i år 
 slides = [slide1, slide2, slide3, slide4];
 // ==== END temporary database of events
 
+var craysliderWrapperWrapper = document.createElement('div');
+craysliderWrapperWrapper.className = 'craysliderWrapperWrapper';
+
+var craysliderWrapperWrapperHolder = document.createElement('div');
+craysliderWrapperWrapperHolder.className = 'craysliderWrapperWrapperHolder';
 
 // Create a sliderWrapper
 var craysliderWrapper = document.createElement('ul');
 craysliderWrapper.className='craysliderWrapper'; // For styling off all sliders
 craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For identification of specific slider
+
+craysliderWrapperWrapper.appendChild(craysliderWrapper);
 
 // Adjust the size of the slides and the slidewrapper
 craysliderWrapper.style.width = 100*slides.length + '%';
@@ -68,9 +75,9 @@ window.onload = function() {
 	if (previewSlide == true) {
 		createPreviewElements();
 	}
-	
 
-	slider.appendChild(craysliderWrapper);
+	craysliderWrapperWrapper.appendChild(craysliderWrapperWrapperHolder);
+	slider.appendChild(craysliderWrapperWrapper);
 }
 
 function createSliderElements() {
@@ -97,8 +104,7 @@ function createSliderElements() {
 		// Set the width of the slides
 		craysliderElement.style.width = 100/(slides.length*slidesOnEachPage) + '%';
 
-		craysliderWrapper.appendChild(craysliderElement);
-		
+		craysliderWrapperWrapperHolder.appendChild(craysliderElement);
 	}
 }
 
@@ -189,10 +195,19 @@ function createSliderArrows() {
 	var rightArrow = document.createElement('a');
 	var leftArrow = document.createElement('a');
 
-	rightArrow.className = 'crayslider-nav crayslider-nav-right';
-	leftArrow.className = 'crayslider-nav crayslider-nav-left';
+	rightArrow.className = 'crayslider-nav-button crayslider-nav-button-right';
+	leftArrow.className = 'crayslider-nav-button crayslider-nav-button-left';
+
+	slider.appendChild(leftArrow);
+	slider.appendChild(rightArrow);
+	/*
+	var arrowWrapper = document.createElement('div');
+	arrowWrapper.className = "crayslider-nav";
+
+	arrowWrapper.appendChild(leftArrow);
+	arrowWrapper.appendChild(rightArrow);
 
 	var sliderParent = slider.parentElement;
-	sliderParent.appendChild(rightArrow);
-	sliderParent.appendChild(leftArrow);
+	sliderParent.appendChild(arrowWrapper);
+	*/
 }

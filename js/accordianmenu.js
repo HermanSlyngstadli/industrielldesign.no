@@ -22,5 +22,5 @@ for (i=0; i<arr.length; i++){
 	var fyll = '<a href="' + arr[i].tittel + '">' + arr[i].tittel + '</a>';
 	document.getElementById('verksted').innerHTML += '<li>' + fyll + '</li>';
 	document.getElementById('programmer').innerHTML += '<li>' + fyll + '</li>';
-	document.getElementById('lærere').innerHTML += '<li>' + fyll + '</li>';
+	document.getElementById('laerere').innerHTML += '<li>' + fyll + '</li>';
 }

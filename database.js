@@ -1,53 +1,53 @@
-var db = {"styret": {
-	"leder":{
-		"tittel":"",
+var db = {"styret": [
+	{
+		"tittel":"Il Presidente (Leder)",
 		"img":"",
-		"mail":"",
+		"mail":"Ilpresidente.leonardo@gmail.com",
 		"navn":"Thomas Kaland"
 	},
-	"nestleder":{
-		"tittel":"",
+	{
+		"tittel":"Il Vice Presidente (Nestleder)",
 		"img":"",
-		"mail":"",
+		"mail":"ilvicepresidente.leonardo@gmail.com",
 		"navn":"Rannveig Carlsen"
 	},
-	"bedriftskontakt":{
-		"tittel":"",
+	{
+		"tittel":"L'Affari (Bedriftsansvarlig)",
 		"img":"",
-		"mail":"",
+		"mail":"bedriftskontakt.leonardo@gmail.com",
 		"navn":"Magnus Lie Fridheim"
 	},
-	"festsjef":{
-		"tittel":"",
+	{
+		"tittel":"Il Vernissageur  (Festsjef)",
 		"img":"",
-		"mail":"",
+		"mail":"ilvernissageur.leonardo@gmail.com",
 		"navn":"Ingrid Dahle"
 	},
-	"ekskursjonsansvarlig":{
-		"tittel":"",
+	{
+		"tittel":"Il Evento Guida (Eksursjonsansvarlig)",
 		"img":"",
-		"mail":"",
+		"mail":"ileventoguida.leonardo@gmail.com",
 		"navn":"Gjøril Fjeldstad"
 	},
-	"redaktor":{
-		"tittel":"",
+	{
+		"tittel":"Dirretore Artistico (Redaktør)",
 		"img":"",
-		"mail":"",
+		"mail":"direttoreartistico.leonardo@gmail.com",
 		"navn":"Tobias Wulvik"
 	},
-	"prsjef":{
-		"tittel":"",
+	{
+		"tittel":"Responsabile Pubblicitario (PR-ansvarlig)",
 		"img":"",
-		"mail":"",
+		"mail":"markedsforing.leonardo@gmail.com",
 		"navn":"Herman Slyngstadli"
 	},
-	"faddersjef":{
-		"tittel":"",
+	{
+		"tittel":"Il Prima (Faddersjef)",
 		"img":"",
-		"mail":"",
+		"mail":"ilprima.leonardo@gmail.com",
 		"navn":"Victoria Fjellbirkeland"
 	}
-},
+],
 "komite": {
 	"bedkom":"Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!",
 	"arrkom":"Vil du være med å arrangere Åretur, kurs, utflukter, julebord og mye mer for medlemmene til den flotte linjen vår? Bli med i arrangementskomiteen da vel! Nå har vi opptak, og det eneste kravet for at du skal få være med er at du er gira. Åreturen er noe man må få med seg, og den blir enda morsommere når du får være med å arrangere den selv. Ellers i året står vi relativt fritt til å arrangere akkurat det vi har lyst til. Her ligger forholdene til rette for å være kreative og få til masse morsomt! Det blir møter et par ganger i måneden eller etter behov. Dette er ikke et verv som tar mye tid, men det betyr ikke at det ikke er morsomt.",
@@ -104,56 +104,66 @@ var db = {"styret": {
 ],
 "arrangmenter": [
 	{
-		"tittel":"",
+		"tittel":"Halloween",
 		"img":"",
-		"tekst":""
+		"tekst":"Det er halloweenfest på huset i år også!",
+		"date":"03.02",
+		"time":"20:00",
+		"location":"IPD"
 	},
 	{
-		"tittel":"",
+		"tittel":"Gravøl",
 		"img":"",
-		"tekst":""
+		"tekst":"Det er duket for årets gravøl. Vi sier farvel til de som har forlatt oss.",
+		"date":"12.3",
+		"time":"21:00",
+		"location":"IPD"
 	},
 	{
-		"tittel":"",
+		"tittel":"Festfest",
 		"img":"",
-		"tekst":""
+		"tekst":"Tro det eller ei, men dette er en fest. Det blir bra.",
+		"date":"20.3",
+		"time":"17:00",
+		"location":"Skiboli"
 	},
 	{
-		"tittel":"",
+		"tittel":"Forelesning med Knut Hamsun",
 		"img":"",
-		"tekst":""
+		"tekst":"Han snakker om hvor kjipt det er å være kjip, og hans erfaringer med svakhet.",
+		"date":"04.04",
+		"time":"12:00",
+		"location":"Hovedbygningen"
 	},
 	{
-		"tittel":"",
+		"tittel":"17. mai frokost",
 		"img":"",
-		"tekst":""
+		"tekst":"Vi har selvfølgelig frokost på nasjonaldagen også i år. Dette blir gøyalt.",
+		"date":"17.05",
+		"time":"19:00",
+		"location":"IPD"
 	}
 ],
 "karriere": [
 	{
 		"tittel":"Making Waves søker nye interaksjonsdesignere",
 		"img":"",
-		"tekst":""
+		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"EGGS vil ha deg med på laget!",
 		"img":"",
-		"tekst":""
+		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"Accenter vokser stadig. Ble med du og da vel.",
 		"img":"",
-		"tekst":""
+		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"Søk sommerjobb hos Blank Oslo!",
 		"img":"",
-		"tekst":""
-	},
-	{
-		"tittel":"",
-		"img":"",
-		"tekst":""
+		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	}
 ],
 "hvavikan": [
