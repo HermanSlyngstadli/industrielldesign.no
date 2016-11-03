@@ -280,7 +280,7 @@ div.panel.show {
     display: block;
 }
 
-.verksted, .programmer, .laerere {
+.verksted, .programmer, .lærere {
 	width: 33%;
 	display: inline-block;
 	margin: auto;

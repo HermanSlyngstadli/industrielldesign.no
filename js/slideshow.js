@@ -24,6 +24,9 @@ var slides;
 var currentSlide = 1; // Sets the startslide of the slider
 var currentPreview = 0; // Set first preview element
 var previewSlide = true;
+var sliderArrows = true;
+
+var currentPosition = 0;
 
 // START ===== temporary database of events
 function happening(image, title, text, date, time, location) {
@@ -55,15 +58,19 @@ craysliderWrapper.style.width = 100*slides.length + '%';
 // Don't create all the elements before the site is fully loaded. Better UX!
 window.onload = function() {
 	// Make slides and append them to the DOM
+	if (sliderArrows == true) {
+		createSliderArrows();
+	}
+
 	createSliderElements();
 	makeElementsClickable();
 
 	if (previewSlide == true) {
 		createPreviewElements();
 	}
+	
 
 	slider.appendChild(craysliderWrapper);
-
 }
 
 function createSliderElements() {
@@ -91,42 +98,33 @@ function createSliderElements() {
 		craysliderElement.style.width = 100/(slides.length*slidesOnEachPage) + '%';
 
 		craysliderWrapper.appendChild(craysliderElement);
+		
 	}
-}
-
-function createButtons() {
-	var rightButton = document.createElement('a');
-	var leftButton = document.createElement('a');
-
-	rightButton.className = 'crayslider-rightButton';
-	leftButton.className = 'crayslider-leftButton';
-	
-	slider.appendChild(rightButton);
-	slider.appendChild(leftButton);
 }
 
 function pushIt(direction) {
 	if(direction === 'left' && currentSlide > 1) {
-		//craysliderWrapper.style.left = 100*(currentSlide-2) + '%';
 		currentSlide--;
 	} else if(direction === 'right' && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
 		linearEase(100);
-		//craysliderWrapper.style.left = -100*currentSlide + '%';
 		currentSlide++;
 	}
 }
-var prosent = 0;
 
-function linearEase(position) {
-	nesteStop(position);
+function linearEase(targetPosition) {
+	if (targetPosition > currentPosition) {
+		nesteStop(targetPosition, -1);
+	} else if (targetPosition < currentPosition) {
+		nesteStop(targetPosition, 1);
+	}
 }
 
-function nesteStop(position) {
-	if (prosent <= position) {
+function nesteStop(targetPosition, direction) { // negative is and positive is 
+	if (currentPosition <= targetPosition) {
 		console.log(prosent);
 		craysliderWrapper.style.left = prosent + '%';
 		prosent += 2;
-		setTimeout(function() {nesteStop(position);}, 20);
+		setTimeout(function() {nesteStop(targetPosition);}, 20);
 	} else {
 		return;
 	}
@@ -185,4 +183,16 @@ function createPreviewElements() {
 	previewElementWrapper.appendChild(previewContentPicture);
 
 	sliderFocused.appendChild(previewElementWrapper);
+}
+
+function createSliderArrows() {
+	var rightArrow = document.createElement('a');
+	var leftArrow = document.createElement('a');
+
+	rightArrow.className = 'crayslider-nav crayslider-nav-right';
+	leftArrow.className = 'crayslider-nav crayslider-nav-left';
+
+	var sliderParent = slider.parentElement;
+	sliderParent.appendChild(rightArrow);
+	sliderParent.appendChild(leftArrow);
 }
