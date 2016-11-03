@@ -359,6 +359,7 @@ div.panel.show {
 }
 
 .styrePost {
+    box-sizing: border-box;
 	margin: 400px auto;
 	margin-bottom: 0;
     height: 300px;
