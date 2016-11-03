@@ -46,14 +46,21 @@ var slide4 = new happening('','Halloween','Det er halloweenfest på huset i år 
 slides = [slide1, slide2, slide3, slide4];
 // ==== END temporary database of events
 
+var craysliderWrapperWrapper = document.createElement('div');
+craysliderWrapperWrapper.className = 'craysliderWrapperWrapper';
+
+var craysliderWrapperWrapperHolder = document.createElement('div');
+craysliderWrapperWrapperHolder.className = 'craysliderWrapperWrapperHolder';
 
 // Create a sliderWrapper
 var craysliderWrapper = document.createElement('ul');
 craysliderWrapper.className='craysliderWrapper'; // For styling off all sliders
 craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For identification of specific slider
 
+craysliderWrapperWrapper.appendChild(craysliderWrapper);
+
 // Adjust the size of the slides and the slidewrapper
-craysliderWrapper.style.width = 100*slides.length + '%';
+//craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
 
 // Don't create all the elements before the site is fully loaded. Better UX!
 window.onload = function() {
@@ -68,9 +75,10 @@ window.onload = function() {
 	if (previewSlide == true) {
 		createPreviewElements();
 	}
-	
 
-	slider.appendChild(craysliderWrapper);
+	craysliderWrapperWrapperHolder.appendChild(craysliderWrapper);
+	craysliderWrapperWrapper.appendChild(craysliderWrapperWrapperHolder);
+	slider.appendChild(craysliderWrapperWrapper);
 }
 
 function createSliderElements() {
@@ -95,15 +103,17 @@ function createSliderElements() {
 		craysliderElement.appendChild(craysliderElementText);
 
 		// Set the width of the slides
-		craysliderElement.style.width = 100/(slides.length*slidesOnEachPage) + '%';
+		craysliderElement.style.width = 100/(slidesOnEachPage) + '%';
+
 
 		craysliderWrapper.appendChild(craysliderElement);
-		
 	}
 }
 
 function pushIt(direction) {
+	console.log(this);
 	if(direction === 'left' && currentSlide > 1) {
+		linearEase(-100);
 		currentSlide--;
 	} else if(direction === 'right' && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
 		linearEase(100);
@@ -121,9 +131,9 @@ function linearEase(targetPosition) {
 
 function nesteStop(targetPosition, direction) { // negative is and positive is 
 	if (currentPosition <= targetPosition) {
-		console.log(prosent);
-		craysliderWrapper.style.left = prosent + '%';
-		prosent += 2;
+		console.log(currentPosition);
+		craysliderWrapper.style.left = currentPosition + '%';
+		currentPosition += 2;
 		setTimeout(function() {nesteStop(targetPosition);}, 20);
 	} else {
 		return;
@@ -189,10 +199,21 @@ function createSliderArrows() {
 	var rightArrow = document.createElement('a');
 	var leftArrow = document.createElement('a');
 
-	rightArrow.className = 'crayslider-nav crayslider-nav-right';
-	leftArrow.className = 'crayslider-nav crayslider-nav-left';
+
+
+	rightArrow.className = 'crayslider-nav-button crayslider-nav-button-right';
+	leftArrow.className = 'crayslider-nav-button crayslider-nav-button-left';
+
+	slider.appendChild(leftArrow);
+	slider.appendChild(rightArrow);
+	/*
+	var arrowWrapper = document.createElement('div');
+	arrowWrapper.className = "crayslider-nav";
+
+	arrowWrapper.appendChild(leftArrow);
+	arrowWrapper.appendChild(rightArrow);
 
 	var sliderParent = slider.parentElement;
-	sliderParent.appendChild(rightArrow);
-	sliderParent.appendChild(leftArrow);
+	sliderParent.appendChild(arrowWrapper);
+	*/
 }
