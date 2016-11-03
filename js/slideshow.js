@@ -60,7 +60,7 @@ craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For iden
 craysliderWrapperWrapper.appendChild(craysliderWrapper);
 
 // Adjust the size of the slides and the slidewrapper
-craysliderWrapper.style.width = 100*slides.length + '%';
+//craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
 
 // Don't create all the elements before the site is fully loaded. Better UX!
 window.onload = function() {
@@ -76,6 +76,7 @@ window.onload = function() {
 		createPreviewElements();
 	}
 
+	craysliderWrapperWrapperHolder.appendChild(craysliderWrapper);
 	craysliderWrapperWrapper.appendChild(craysliderWrapperWrapperHolder);
 	slider.appendChild(craysliderWrapperWrapper);
 }
@@ -102,14 +103,17 @@ function createSliderElements() {
 		craysliderElement.appendChild(craysliderElementText);
 
 		// Set the width of the slides
-		craysliderElement.style.width = 100/(slides.length*slidesOnEachPage) + '%';
+		craysliderElement.style.width = 100/(slidesOnEachPage) + '%';
 
-		craysliderWrapperWrapperHolder.appendChild(craysliderElement);
+
+		craysliderWrapper.appendChild(craysliderElement);
 	}
 }
 
 function pushIt(direction) {
+	console.log(this);
 	if(direction === 'left' && currentSlide > 1) {
+		linearEase(-100);
 		currentSlide--;
 	} else if(direction === 'right' && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
 		linearEase(100);
@@ -127,9 +131,9 @@ function linearEase(targetPosition) {
 
 function nesteStop(targetPosition, direction) { // negative is and positive is 
 	if (currentPosition <= targetPosition) {
-		console.log(prosent);
-		craysliderWrapper.style.left = prosent + '%';
-		prosent += 2;
+		console.log(currentPosition);
+		craysliderWrapper.style.left = currentPosition + '%';
+		currentPosition += 2;
 		setTimeout(function() {nesteStop(targetPosition);}, 20);
 	} else {
 		return;
@@ -194,6 +198,8 @@ function createPreviewElements() {
 function createSliderArrows() {
 	var rightArrow = document.createElement('a');
 	var leftArrow = document.createElement('a');
+
+
 
 	rightArrow.className = 'crayslider-nav-button crayslider-nav-button-right';
 	leftArrow.className = 'crayslider-nav-button crayslider-nav-button-left';
