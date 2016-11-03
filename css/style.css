@@ -130,11 +130,12 @@ a:hover {
 }
 
 .sectionTitle {
+	font-size: 2em;
 	background: #fff;
 	padding: 5px 10px;
 	position: absolute;
 	bottom: -20px;
-	left: 40px;
+	left: 10%;
 }
 /* --- FOOTER --- */
 #footer {   
