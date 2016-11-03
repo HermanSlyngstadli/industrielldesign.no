@@ -526,30 +526,6 @@ div.panel.show {
     background-color: #fff;
 }
 
-@media screen and (min-width:1240px) {
-
-.timelineBlock:nth-child(even)::before {
-    width: 150px;
-    left: 450px;
-}
-
-.timelineBlock:nth-child(even)::after {
-    left: 440px;
-}
-
-.timelineBlock:nth-child(even) {
-    text-align: right;
-    position: relative;
-    left: -600px;
-}
-
-.timelineBlock:nth-child(odd) {
-    position: relative;
-    left: 100px;
-}
-	
-}
-
 .timeline h1 {
     position: relative;
     left: -53px;
@@ -560,3 +536,60 @@ div.panel.show {
     background-color: #fff;
     margin: 100px 0;
 }
+
+@media screen and (min-width:1240px) {
+
+	.timelineBlock:nth-child(even)::before {
+		width: 150px;
+		left: 450px;
+	}
+
+	.timelineBlock:nth-child(even)::after {
+		left: 440px;
+	}
+
+	.timelineBlock:nth-child(even) {
+		text-align: right;
+		position: relative;
+		left: -600px;
+	}
+
+	.timelineBlock:nth-child(odd) {
+		position: relative;
+		left: 100px;
+	}
+	
+}
+
+@media screen and (max-width: 1240px) {
+	.timelineBlock::before {
+		width: 50px;
+		left: 450px;
+	}
+
+	.timelineBlock::after {
+		left: 440px;
+	}
+
+	.timelineBlock {
+		text-align: right;
+		position: relative;
+		left: -500px;
+	}
+	
+	.timeline {
+		margin-right: 20%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.timelineBlock {
+		width: 100px;
+		left: 200px;
+	}
+	
+	.timeline {
+		margin-right: 12%;
+	}
+}
+
