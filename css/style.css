@@ -281,7 +281,7 @@ div.panel.show {
     display: block;
 }
 
-.verksted, .programmer, .lærere {
+.verksted, .programmer, .laerere {
 	width: 33%;
 	display: inline-block;
 	margin: auto;
