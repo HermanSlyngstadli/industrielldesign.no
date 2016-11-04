@@ -8,7 +8,7 @@
 	<header id="header"></header>
 	<!-- START CONTENT -->
 	<!-- START BUSINESSITE -->			
-	<div class="sectionHeader" style="background-image:url('img/headerArr.jpg')">
+	<div class="sectionHeader" style="background-image:url('img/cecilie.png')">
 		<h2 class="sectionTitle">BEDRIFT</h2>
 	</div>
 	<section class="bedriftWrapper centerText">
@@ -20,11 +20,7 @@
 			</article>
 			<article class="vikan">
 				<h4>Eksempler på hva vi kan</h4>
-				<ul>
-					<li>>kult</li>
-					<li>>fett</li>
-					<li>>fantastisk</li>
-					<li>>fabelaktig</li>
+				<ul id="hvavikan">
 				</ul>
 			</article>
 		</aside>
@@ -50,5 +46,13 @@
 	<script type="text/javascript" src="js/importHeader.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/importFooter.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/importLogo.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/accordianmenu.js" charset="utf-8"></script>
+	<script type="text/javascript" src="database.js"></script>
+	<script>
+		for(var i = 0; i < db.hvavikan.length; i++) {
+			var hvavi = document.getElementById('hvavikan');
+			hvavi.innerHTML += '<li>' + db.hvavikan[i] + '</li>';
+		}
+	</script>
 </body>
 </html>

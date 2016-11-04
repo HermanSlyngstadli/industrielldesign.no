@@ -102,7 +102,7 @@ var db = {"styret": [
 		"img":""
 	}
 ],
-"arrangmenter": [
+"arrangementer": [
 	{
 		"tittel":"Halloween",
 		"img":"",

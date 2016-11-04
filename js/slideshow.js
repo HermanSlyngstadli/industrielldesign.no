@@ -54,8 +54,9 @@ craysliderWrapperWrapperHolder.className = 'craysliderWrapperWrapperHolder';
 
 // Create a sliderWrapper
 var craysliderWrapper = document.createElement('ul');
-craysliderWrapper.className='craysliderWrapper'; // For styling off all sliders
+craysliderWrapper.className = 'craysliderWrapper'; // For styling off all sliders
 craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For identification of specific slider
+craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
 
 craysliderWrapperWrapper.appendChild(craysliderWrapper);
 
@@ -103,38 +104,31 @@ function createSliderElements() {
 		craysliderElement.appendChild(craysliderElementText);
 
 		// Set the width of the slides
-		craysliderElement.style.width = 100/(slidesOnEachPage) + '%';
+		craysliderElement.style.width = 100/((slidesOnEachPage)*Math.ceil(slides.length/slidesOnEachPage)) + '%';
 
 
 		craysliderWrapper.appendChild(craysliderElement);
 	}
 }
 
-function pushIt(direction) {
-	console.log(this);
-	if(direction === 'left' && currentSlide > 1) {
-		linearEase(-100);
+function slideTo(direction) {
+	var targetPosition = currentPosition + direction*100;
+	if(direction === -1 && currentSlide > 1) {
+		nesteStop(targetPosition, 1);
+		console.log('Holaasd');
 		currentSlide--;
-	} else if(direction === 'right' && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
-		linearEase(100);
+	} else if(direction === 1 && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
+		nesteStop(targetPosition, -1);
 		currentSlide++;
 	}
 }
 
-function linearEase(targetPosition) {
-	if (targetPosition > currentPosition) {
-		nesteStop(targetPosition, -1);
-	} else if (targetPosition < currentPosition) {
-		nesteStop(targetPosition, 1);
-	}
-}
-
 function nesteStop(targetPosition, direction) { // negative is and positive is 
-	if (currentPosition <= targetPosition) {
+	if (Math.abs(currentPosition) <= targetPosition) {
 		console.log(currentPosition);
 		craysliderWrapper.style.left = currentPosition + '%';
-		currentPosition += 2;
-		setTimeout(function() {nesteStop(targetPosition);}, 20);
+		currentPosition += 2*direction;
+		setTimeout(function() {nesteStop(targetPosition, direction);}, 20);
 	} else {
 		return;
 	}
@@ -199,7 +193,12 @@ function createSliderArrows() {
 	var rightArrow = document.createElement('a');
 	var leftArrow = document.createElement('a');
 
-
+	rightArrow.addEventListener('click', function(){
+		slideTo(1);
+	});
+	leftArrow.addEventListener('click', function(){
+		slideTo(-1);
+	});
 
 	rightArrow.className = 'crayslider-nav-button crayslider-nav-button-right';
 	leftArrow.className = 'crayslider-nav-button crayslider-nav-button-left';
