@@ -15,8 +15,8 @@
 		<aside class="rightFloat">
 			<article>
 				<h3 class="bedkon">Bedriftskontakt</h3>
-				<h4 class="pia">Pia Sollund</h4>
-				<p id="bedtlf">Tlf: +47 999 00 999 <br> Mail: oaiefhkaehfk@akfemla.no</p>
+				<h4 id="bedriftskontakt" class="pia"></h4>
+				<p id="bedtlf"></p>
 			</article>
 			<article class="vikan">
 				<h4>Eksempler på hva vi kan</h4>
@@ -53,6 +53,8 @@
 			var hvavi = document.getElementById('hvavikan');
 			hvavi.innerHTML += '<li>' + db.hvavikan[i] + '</li>';
 		}
+		document.getElementById('bedtlf').innerHTML = 'Tlf.: +47 999 00 999 <br />Mail: ' + db.styret[2].mail;
+		document.getElementById('bedriftskontakt').innerHTML = db.styret[2].navn;
 	</script>
 </body>
 </html>

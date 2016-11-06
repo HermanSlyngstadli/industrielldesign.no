@@ -6,7 +6,6 @@ var footer = document.getElementById('footer');
 
 // Adding each element one by one for easier editing
 var footerText = ''
-
     + '<div class="footerLogo">'
     +   '<div><a href="https://www.facebook.com/LeonardoLinjeforening/?fref=ts" target="_blank">'
     // facebookbilde i svg-format (class="socialLogo")
