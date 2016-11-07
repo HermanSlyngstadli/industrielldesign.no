@@ -40,6 +40,10 @@ h1, h2, h3, h4 {
 h2 {
     z-index:2;
 }
+
+p {
+}
+
 a {
 	color: #0092b5;
 	text-decoration: none;
@@ -464,26 +468,26 @@ div.panel {
 .styrePost {
 	margin: 400px auto;
 	margin-bottom: 0;
-    height: 300px;
+    height: 400px;
 }
 
 .styrePost > p {
-    padding: 10px 0px 20px 300px;
+    padding: 10px 0px 20px 0;
 }
 
 .styreTittel {
-    padding-left: 40px;
     font-size: 3em;
     font-weight: 400;
     text-transform: none;
+	margin-left: 5%;
     
 }
 .styreBilde {
     position: relative;
     float: left;
+	bottom: 300px;
     height: 300px;
     width: auto;
-    margin-right: 20px;
 	z-index: -1;
 }
 .styreNavn {
@@ -506,7 +510,7 @@ div.panel {
 
 @media screen and (min-width: 1240px) {
     .styrePost {
-        width: 960px;
+        width: 100%;
     }
 }
 
@@ -515,18 +519,28 @@ div.panel {
     #styret article:nth-child(odd) .styreBilde {
         position: relative;
         float: right;
-        margin-left: 60px;
     }
 
     #styret article:nth-child(odd)  .styrePost {
-            text-align: right;
-            width: 1240px;
+		text-align: right;
+		width: 1240px;
     }
 
     #styret article:nth-child(odd)  .styrePost p {
         text-align: left;
-        padding-right: 350px;
     }
+	
+	.styreNavn:nth-child(even), .styreTittel:nth-child(even), .styrePost:nth-child(even) > p {
+		margin-right: 10%;
+		margin-left: 40%;
+	}
+	
+	.styreNavn, .styreTittel, .styrePost > p {
+		margin-left: 10%;
+		margin-right: 40%;
+	}
+	
+	
 }
 
 @media screen and (max-width:1240px) and (min-width:768px) {
@@ -586,7 +600,7 @@ div.panel {
 
 .komiteTittel {
     font-weight: 400;
-    font-size: 5em;
+	font-size: 3em;
     
 }
 
