@@ -30,8 +30,8 @@ html, body {
 /* -- Fonts, colors etc. -- */
 body {
 	font-family:'Raleway', sans-serif;
-    background:#FAFAFA;
 }
+
 h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
 	font-weight: 800;
@@ -420,7 +420,8 @@ div.panel {
 
 #noe {
 	margin:80px 0;
-	
+}
+
 @media screen and (max-width:960px) {
     .articleP {
         width: 80%;
@@ -431,10 +432,12 @@ div.panel {
 .bedriftWrapper {
 	overflow:auto;
 }
+	
 .bedriftingress {
 	margin: 0px 0px 100px 0px;
 
 }
+	
 .bedriftartikkel{
 	margin: 0px 0px 100px 0px;
 	float:left;
@@ -553,7 +556,7 @@ div.panel {
 		margin-left: 10%;
 	}
 	
-	.styreNavn:nth-child(even), .styreTittel:nth-child(even), .styrePost:nth-child(even) > p {
+	.styrePost:nth-child(even) .styreNavn, .styrePost:nth-child(even) .styreTittel, .styrePost:nth-child(even) > p {
 		margin-right: 10%;
 		margin-left: 40%;
 	}
@@ -697,8 +700,8 @@ div.panel {
     position: absolute;
     top: 24px;
     left: 0;
-    height: 5px;
-    width: 5px;
+    height: 10px;
+    width: 10px;
     border: solid 3px #0092b5;
     border-radius: 10px;
     background-color: #fff;
