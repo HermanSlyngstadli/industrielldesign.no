@@ -93,13 +93,13 @@
         for(var i = 0; i < db.styret.length; i++) {
             styretWrapper.innerHTML += ''
             +'<article class="styrePost">'
-                +'<img src="img/Styret/' + db.styret[i].img + '" class="styreBilde" alt="styreBilde" />'
                 +'<h1 class="styreTittel">' + db.styret[i].tittel + '</h1>'
                 +'<h2 class="styreNavn">' + db.styret[i].navn + '</h2>'
                 +'<p>'
                     + db.styret[i].beskrivelse
                 +'</p>'
                 +'<div class="sitatBoks">'
+					+'<img src="img/Styret/' + db.styret[i].img + '" class="styreBilde" alt="styreBilde" />'
                     +'<p class="styreSitat">' + db.styret[i].sitat + '</p>'
                 +'</div>'
             +'</article>';
@@ -108,8 +108,8 @@
         for(var i = 0; i < db.komite.length; i++) {
             komiteWrapper.innerHTML += ''
             +'<article>'
-                +'<img src="img/Styret/' + db.komite[i].img + '" class="komiteFoto" alt="ArrKom stort bilde" />'
-                +'<img src="img/Styret/' + db.komite[i].ikon + '" class="komiteLogo" alt="ArrKomLogo" />'
+                +'<img src="img/Komite/' + db.komite[i].img + '" class="komiteFoto" alt="ArrKom stort bilde" />'
+                +'<img src="img/Komite/Ikoner/' + db.komite[i].ikon + '" class="komiteLogo" alt="ArrKomLogo" />'
                 +'<h1 class="komiteTittel">' + db.komite[i].tittel + '</h1>'
                 +'<p>'
                     + db.komite[i].beskrivelse;
