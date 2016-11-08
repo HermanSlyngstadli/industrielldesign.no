@@ -62,3 +62,6 @@
 .crayslider-nav-button-left {
 	left:0;
 }
+.crayslider-activeSlide {
+	background:grey;
+}

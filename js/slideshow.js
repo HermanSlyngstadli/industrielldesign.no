@@ -5,11 +5,7 @@
 
 /*
 	To Do:
-		- automatisk rullerende slides
-		- trykke på slide for preview
 		- highlighte preview slide
-		- trykke neste slide
-		- trykke neste arr preview
 */
 
 // Init
@@ -20,7 +16,7 @@ var slidesOnEachPage = 3;
 var slider = document.getElementById(sliderId);
 var sliderFocused = document.getElementById(focusedSlideWrapperId);
 
-var slides;
+var slides = [] ;
 var currentSlide = 1; // Sets the startslide of the slider
 var currentPreview = 0; // Set first preview element
 var previewSlide = true;
@@ -28,23 +24,12 @@ var sliderArrows = true;
 
 var currentPosition = 0;
 
-// START ===== temporary database of events
-function happening(image, title, text, date, time, location) {
-	this.image = image;
-	this.title = title;
-	this.text = text;
-	this.date = date;
-	this.time = time;
-	this.location = location;
-};
-
-var slide1 = new happening('','Halloween','Det er halloweenfest på huset i år også!','29.10','20:00','IPD');
-var slide2 = new happening('','Gravøl','Det er Gravøl på huset i år også!','03.02','17:00','IPD');
-var slide3 = new happening('','Festfest','Det er festfest på huset i år også!','09.03','19:00','IPD');
-var slide4 = new happening('','Halloween','Det er halloweenfest på huset i år også!','29.10','20:00','IPD');
-
-slides = [slide1, slide2, slide3, slide4];
-// ==== END temporary database of events
+// ============= get slides
+if (db) {
+	for (i in db.arrangementer) {
+		slides.push(db.arrangementer[i]);
+	}
+}
 
 var craysliderWrapperWrapper = document.createElement('div');
 craysliderWrapperWrapper.className = 'craysliderWrapperWrapper';
@@ -59,9 +44,6 @@ craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For iden
 craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
 
 craysliderWrapperWrapper.appendChild(craysliderWrapper);
-
-// Adjust the size of the slides and the slidewrapper
-//craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
 
 // Don't create all the elements before the site is fully loaded. Better UX!
 window.onload = function() {
@@ -94,8 +76,8 @@ function createSliderElements() {
 		var craysliderElementText = document.createElement('div');
 		craysliderElementText.className = 'craysliderElementText';
 
-		var crayElementHeader = document.createTextNode(slides[i].title);
-		var crayElementText = document.createTextNode(slides[i].text);
+		var crayElementHeader = document.createTextNode(slides[i].tittel);
+		var crayElementText = document.createTextNode(slides[i].tekst);
 
 		craysliderElementHeader.appendChild(crayElementHeader);
 		craysliderElementText.appendChild(crayElementText);
@@ -106,31 +88,31 @@ function createSliderElements() {
 		// Set the width of the slides
 		craysliderElement.style.width = 100/((slidesOnEachPage)*Math.ceil(slides.length/slidesOnEachPage)) + '%';
 
-
 		craysliderWrapper.appendChild(craysliderElement);
 	}
 }
 
 function slideTo(direction) {
 	if(currentSlide >= 1 && currentSlide <= Math.ceil(slides.length/slidesOnEachPage)) {
-		if (currentSlide == 1 && direction < 0 || currentSlide == Math.ceil(slides.length/slidesOnEachPage) && direction > 0) {
-			console.log('Oi, m8');
+		if (currentSlide == 1 && direction < 0) {
+			console.log('Går ikke lenger åt venster');
+			return;
+		} else if (currentSlide == Math.ceil(slides.length/slidesOnEachPage) && direction > 0) {
+			console.log('Går ikke lenger til høyre');
 			return;
 		}
 
 		currentSlide += direction;
-		console.log(direction);
-		targetPosition = currentPosition + direction*(100);
-		nesteStop(targetPosition, direction);
-		console.log(currentSlide);
+		targetPosition = -(currentSlide-1)*(100);
+		animateSlider(targetPosition, direction);
 	}
 }
 
-function nesteStop(targetPosition, direction) { // negative is and positive is 
-	if (Math.abs(currentPosition) <= targetPosition) {
+function animateSlider(targetPosition, direction) { // negative is and positive is 
+	if (Math.abs(targetPosition-currentPosition) > 0) {
+		currentPosition -= 2*direction;
 		craysliderWrapper.style.left = currentPosition + '%';
-		currentPosition += 2*direction;
-		setTimeout(function() {nesteStop(targetPosition, direction);}, 20);
+		setTimeout(function() {animateSlider(targetPosition, direction);}, 10);
 	} else {
 		return;
 	}
@@ -141,6 +123,7 @@ function makeElementsClickable() {
 		(function(i){
 			craysliderWrapper.children[i].onclick = function(){
 				changePreviewSlide(i);
+				makeActiveSlide(this);
 			}
 		})(i);
 	}
@@ -151,9 +134,9 @@ function changePreviewSlide(slide) {
 	var description = document.getElementById('crayslider-previewContentText-description'+'-'+sliderId);
 	var picture = document.getElementById('crayslider-previewContentPicture'+'-'+sliderId);
 
-	header.innerHTML = slides[slide].title;
-	description.innerHTML = slides[slide].text;
-	picture.innerHTML = slides[slide].image;
+	header.innerHTML = slides[slide].tittel;
+	description.innerHTML = slides[slide].tekst;
+	picture.innerHTML = slides[slide].img;
 }
 
 function createPreviewElements() {
@@ -207,14 +190,12 @@ function createSliderArrows() {
 
 	slider.appendChild(leftArrow);
 	slider.appendChild(rightArrow);
-	/*
-	var arrowWrapper = document.createElement('div');
-	arrowWrapper.className = "crayslider-nav";
+}
 
-	arrowWrapper.appendChild(leftArrow);
-	arrowWrapper.appendChild(rightArrow);
-
-	var sliderParent = slider.parentElement;
-	sliderParent.appendChild(arrowWrapper);
-	*/
+function makeActiveSlide(element) {
+	var activeClassName = 'crayslider-activeSlide';
+	if (document.getElementsByClassName(activeClassName)[0]) {
+		document.getElementsByClassName(activeClassName)[0].classList.toggle(activeClassName);
+	}
+	element.classList.toggle(activeClassName);
 }

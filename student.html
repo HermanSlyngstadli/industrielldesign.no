@@ -28,7 +28,7 @@
 		<header class="sectionHeader" style="background-image:url('img/polsefest.png')">
 			<h2 class="sectionTitle">Tips&Tricks</h2>
 		</header>
-		<div class="tipsAndTricksWrapper">
+		<div id="tipsAndTricksWrapper">
 			
 		</div>
 	</section>
@@ -79,18 +79,31 @@
 	<script type="text/javascript" src="js/importHeader.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/importLogo.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/importFooter.js" charset="utf-8"></script>
-	<script type="text/javascript" src="js/slideshow.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/accordianmenu.js" charset="utf-8"></script>
 	<script type="text/javascript" src="database.js" ></script>
-	<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" src="js/slideshow.js" charset="utf-8"></script>
+	<script type="text/javascript">
 		var careerWrapper = document.getElementById('careerWrapper');
 		for (var i = 0; i < db.karriere.length; i++) {
 			careerWrapper.innerHTML += ''
-			+'<article>'
-				+'<h3>' + db.karriere[i].tittel + '</h3>'
-				+'<img src="'+ db.karriere[i].img +'" />'
-				+'<div class="careerText">'
-					+ db.karriere[i].tekst
+			+'<article class="careerArticle">'
+				+'<img class="careerArticleImage" src="'+ db.karriere[i].img +'" />'
+				+'<div class="careerArticleTextWrapper">'	
+					+'<h3>' + db.karriere[i].tittel + '</h3>'
+					+'<div class="careerArticleText">'
+						+ db.karriere[i].tekst
+					+'</div>'
+				+'</div>'
+			+'</article>';
+		}
+
+		var tipsAndTricksWrapper = document.getElementById('tipsAndTricksWrapper');
+		for (var i = 0; i < db.tipsogtricks.length; i++) {
+			tipsAndTricksWrapper.innerHTML += ''
+			+'<article class="tipsAndTricksArticleWrapper">'
+				+'<div class="tipsAndTricksImage" style="background-image:url(\''+ db.tipsogtricks[i].img +'\')"></div>'
+				+'<div class="tipsAndTricksTextWrapper">'	
+					+'<h3>' + db.tipsogtricks[i].tittel + '</h3>'
 				+'</div>'
 			+'</article>';
 		}
