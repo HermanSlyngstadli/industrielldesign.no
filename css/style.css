@@ -30,8 +30,8 @@ html, body {
 /* -- Fonts, colors etc. -- */
 body {
 	font-family:'Raleway', sans-serif;
+    background:#FAFAFA;
 }
-
 h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
 	font-weight: 800;
@@ -40,10 +40,6 @@ h1, h2, h3, h4 {
 h2 {
     z-index:2;
 }
-
-p {
-}
-
 a {
 	color: #0092b5;
 	text-decoration: none;
@@ -414,34 +410,27 @@ div.panel {
 /* --- WikiArticle --- */
 .wikiinfo{
 	width: auto;
-	margin: 10% 20%;
+	margin: 100px 200px;
 	position: center;
 }
 
 #noe {
 	margin:80px 0;
-}
-
-@media screen and (max-width:960px) {
-    .articleP {
-        width: 80%;
-    }	
+	
 }
 
 /* --- Business --- */
 .bedriftWrapper {
 	overflow:auto;
 }
-	
 .bedriftingress {
 	margin: 0px 0px 100px 0px;
 
 }
-	
 .bedriftartikkel{
 	margin: 0px 0px 100px 0px;
 	float:left;
-	width:60%;
+	width:500px;
 }
 #bedtlf{
 	font-size: 11px;
@@ -459,22 +448,8 @@ div.panel {
 	color: #0092b5;
 }
 
-@media screen and (max-width:960px) {
-    .bedriftartikkel {
-        width: 80%;
-    }
-    .rightFloat {
-    	float: none;
-    	width: 80%;
-    }
-    .bedriftWrapper {
-    	width: 100%;
-    }
-}
 
-
-
-/* ---  Leonardo --- */
+/* --- About Leonardo --- */
 .introduksjon {
     margin-bottom: 200px;
 	width: 960px;
@@ -487,28 +462,28 @@ div.panel {
 }
 
 .styrePost {
-	margin: 400px auto;
-	margin-bottom: 0;
-    height: 400px;
+        margin: 400px auto;
+        margin-bottom: 0;
+        height: 300px;
 }
 
 .styrePost > p {
-    padding: 10px 0px 20px 0;
+    padding: 10px 0px 20px 300px;
 }
 
 .styreTittel {
+    padding-left: 40px;
     font-size: 3em;
     font-weight: 400;
     text-transform: none;
-	margin-left: 5%;
     
 }
 .styreBilde {
     position: relative;
     float: left;
-	bottom: 300px;
     height: 300px;
     width: auto;
+    margin-right: 20px;
 	z-index: -1;
 }
 .styreNavn {
@@ -531,7 +506,7 @@ div.panel {
 
 @media screen and (min-width: 1240px) {
     .styrePost {
-        width: 100%;
+        width: 960px;
     }
 }
 
@@ -540,29 +515,18 @@ div.panel {
     #styret article:nth-child(odd) .styreBilde {
         position: relative;
         float: right;
+        margin-left: 60px;
     }
 
     #styret article:nth-child(odd)  .styrePost {
-		text-align: right;
-		width: 1240px;
+            text-align: right;
+            width: 1240px;
     }
 
     #styret article:nth-child(odd)  .styrePost p {
         text-align: left;
+        padding-right: 350px;
     }
-	
-	.styreNavn, .styreTittel, .styrePost > p {
-		margin-right: 40%;
-		margin-left: 10%;
-	}
-	
-	.styrePost:nth-child(even) .styreNavn, .styrePost:nth-child(even) .styreTittel, .styrePost:nth-child(even) > p {
-		margin-right: 10%;
-		margin-left: 40%;
-	}
-	
-	
-	
 }
 
 @media screen and (max-width:1240px) and (min-width:768px) {
@@ -611,7 +575,7 @@ div.panel {
 	}
 }
 
-/* --- komiteene --- */
+/* --- Komiteene --- */
 #komite header {
     margin-top: 200px;
 }
@@ -622,7 +586,7 @@ div.panel {
 
 .komiteTittel {
     font-weight: 400;
-	font-size: 3em;
+    font-size: 5em;
     
 }
 
@@ -700,8 +664,8 @@ div.panel {
     position: absolute;
     top: 24px;
     left: 0;
-    height: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
     border: solid 3px #0092b5;
     border-radius: 10px;
     background-color: #fff;

@@ -112,20 +112,22 @@ function createSliderElements() {
 }
 
 function slideTo(direction) {
-	var targetPosition = currentPosition + direction*100;
-	if(direction === -1 && currentSlide > 1) {
-		nesteStop(targetPosition, 1);
-		console.log('Holaasd');
-		currentSlide--;
-	} else if(direction === 1 && currentSlide < Math.ceil(slides.length/slidesOnEachPage)) {
-		nesteStop(targetPosition, -1);
-		currentSlide++;
+	if(currentSlide >= 1 && currentSlide <= Math.ceil(slides.length/slidesOnEachPage)) {
+		if (currentSlide == 1 && direction < 0 || currentSlide == Math.ceil(slides.length/slidesOnEachPage) && direction > 0) {
+			console.log('Oi, m8');
+			return;
+		}
+
+		currentSlide += direction;
+		console.log(direction);
+		targetPosition = currentPosition + direction*(100);
+		nesteStop(targetPosition, direction);
+		console.log(currentSlide);
 	}
 }
 
 function nesteStop(targetPosition, direction) { // negative is and positive is 
 	if (Math.abs(currentPosition) <= targetPosition) {
-		console.log(currentPosition);
 		craysliderWrapper.style.left = currentPosition + '%';
 		currentPosition += 2*direction;
 		setTimeout(function() {nesteStop(targetPosition, direction);}, 20);

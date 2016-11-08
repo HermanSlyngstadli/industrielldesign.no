@@ -45,12 +45,6 @@
 	float:left;
 	background:#ddd;
 }
-.crayslider-nav {
-	width:960px;
-	position:relative;
-	left:10%;
-	width:100px;
-}
 .crayslider-nav-button {
 	display:block;
 	width:10%;

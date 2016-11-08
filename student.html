@@ -38,7 +38,7 @@
 		<header class="sectionHeader"  style="background-image:url('img/cecilie.png')">
 			<h2 class="sectionTitle">Karriere</h2>
 		</header>
-		<div class="careerArticleWrapper">
+		<div id="careerWrapper" class="careerArticleWrapper">
 			
 		</div>
 	</section>
@@ -81,6 +81,19 @@
 	<script type="text/javascript" src="js/importFooter.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/slideshow.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/accordianmenu.js" charset="utf-8"></script>
-	<script type="text/javascript" src="database.js" charset="utf-8"></script>
+	<script type="text/javascript" src="database.js" ></script>
+	<script type="text/javascript" charset="utf-8">
+		var careerWrapper = document.getElementById('careerWrapper');
+		for (var i = 0; i < db.karriere.length; i++) {
+			careerWrapper.innerHTML += ''
+			+'<article>'
+				+'<h3>' + db.karriere[i].tittel + '</h3>'
+				+'<img src="'+ db.karriere[i].img +'" />'
+				+'<div class="careerText">'
+					+ db.karriere[i].tekst
+				+'</div>'
+			+'</article>';
+		}
+	</script>
 </body>
 </html>
