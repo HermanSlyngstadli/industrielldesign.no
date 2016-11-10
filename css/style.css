@@ -481,6 +481,9 @@ div.panel {
 	color: #0092b5;
 }
 
+@media screen and (max-width:960px) {
+	
+}
 
 /* --- About Leonardo --- */
 .introduksjon {
