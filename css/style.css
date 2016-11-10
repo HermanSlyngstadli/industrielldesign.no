@@ -53,10 +53,14 @@ a:hover {
 	background-color: rgb(233,79,148);
 	color: #fff;
 }
-
+.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
 /* ==== Responsive classes ===========*/
 .centerWrapper {
-	width:70%;
+	width:80%;
 	margin:0 auto;
 }
 @media only screen and (max-width:1040px) {
@@ -119,7 +123,7 @@ a:hover {
 	height:3px;
 	background:#fff;
 	transform-origin: center;
-	transition: all .3s ease;
+	transition: all .2s ease;
 }
 .burgerPart:first-child {
 	transform: translate(0,12px);
@@ -129,12 +133,13 @@ a:hover {
 }
 .open .burgerPart:nth-child(2) {
 	max-width:0;
+	transform:scaleX(0);
 }
 .open .burgerPart:first-child {
-	transform: translate(7px, 0) rotate(-60deg);
+	transform: rotate(-45deg);
 }
 .open .burgerPart:last-child{
-	transform: translate(-7px, 0) rotate(60deg);
+	transform: rotate(45deg);
 }
 .headerScrolled {
 	position:fixed;
@@ -188,7 +193,7 @@ a:hover {
 	top:20%;
 }
 
-@media only screen and (max-width:560px) {
+@media only screen and (max-width:900px) {
 	.header button {
 		display:block;
 	}
@@ -230,8 +235,8 @@ a:hover {
 	width: 100%;
 	height:32rem;
 	background: #eee;
-				background-size: cover;
-				background-position: 50% 50%;
+	background-size: cover;
+	background-position: 50% 50%;
 	position: relative;
 	margin-bottom: 100px;
 }
@@ -429,7 +434,6 @@ a:hover {
 .accordion {
 	color: #444;
 	cursor: pointer;
-	/*width: 100%;*/
 	text-align: left;
 	border: none;
 	outline: none;
@@ -522,66 +526,72 @@ div.panel {
 }
 
 .styrePost {
-		margin: 400px auto;
-		margin-bottom: 0;
-		height: 300px;
+	margin: 0 auto;
+	margin-bottom: 200px;
 }
 
-.styrePost > p {
-	padding: 10px 0px 20px 300px;
+.styrePost p {
+	padding-bottom:1em;
 }
 
 .styreTittel {
-	padding-left: 40px;
 	font-size: 3em;
 	font-weight: 400;
 	text-transform: none;
 	
 }
-.styreBilde {
-	position: relative;
+.styreTekstWrapper {
+	float:right;
+	width:70%;
+}
+.styreBildeWrapper {
 	float: left;
-	height: 300px;
+	width:30%;
+	height:100%;
+	overflow:hidden;
+}
+.styreBilde {
 	width: auto;
-	margin-right: 20px;
 	z-index: -1;
+	background-size:cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	height:300px;
+	width:auto;
+}
+.styreBildeBlock {
+	position: relative;
+	overflow: hidden;
+	height: 300px;
 }
 .styreNavn {
 	font-weight: 400;
 	text-transform: none;
+	margin-bottom:1em;
 }
 
 .sitatBoks {
-		background-color: #0092b5;
-		min-height: 100px;
-		width: 100%;
-		margin: 0;
-		padding: 40px 80px 20px 100px;
-		text-align: right;
-		color: white;
-		font-size: 1.2em;
-		text-align: center;
-		z-index: 3;
+	background-color: #0092b5;
+	min-height: 100px;
+	width: 100%;
+	margin: 0;
+	padding: 40px 80px 20px 100px;
+	text-align: right;
+	color: white;
+	font-size: 1.2em;
+	text-align: center;
+	z-index: 3;
 }
 
 @media screen and (min-width: 1240px) {
-	.styrePost {
-		width: 960px;
-	}
+
 }
 
 @media screen and (min-width:768px) {
 	
-	#styret article:nth-child(odd) .styreBilde {
-		position: relative;
-		float: right;
-		margin-left: 60px;
-	}
-
-	#styret article:nth-child(odd)  .styrePost {
-			text-align: right;
-			width: 1240px;
-	}
 
 	#styret article:nth-child(odd)  .styrePost p {
 		text-align: left;
@@ -622,16 +632,8 @@ div.panel {
 		float: none;
 	}
 	
-	.styreNavn {
-		margin-left: 5%;
-	}
-	
 	.styrePost p {
-		padding: 0;
 		padding-bottom: 2%;
-		margin-left: 5%;
-		width: 80%;
-		margin-right: 5%;
 	}
 }
 

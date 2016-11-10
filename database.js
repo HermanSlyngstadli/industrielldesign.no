@@ -1,67 +1,67 @@
 var db = {"styret": [
 	{
-		"tittel":"Il Presidente (Leder)",
+		"tittel":"Il Presidente",
 		"img":"ilpresidente.png",
 		"mail":"Ilpresidente.leonardo@gmail.com",
 		"navn":"Thomas Kaland",
 		"sitat":"Tears come from the heart and not the brain.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	},
 	{
-		"tittel":"Il Vice Presidente (Nestleder)",
+		"tittel":"Il Vice Presidente",
 		"img":"ilvicepresidente.png",
 		"mail":"ilvicepresidente.leonardo@gmail.com",
 		"navn":"Rannveig Carlsen",
 		"sitat":"Simplicity is the ultimate sophistication.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	},
 	{
-		"tittel":"L'Affari (Bedriftsansvarlig)",
+		"tittel":"L'Affari",
 		"img":"l'affari.png",
 		"mail":"bedriftskontakt.leonardo@gmail.com",
 		"navn":"Magnus Lie Fridheim",
 		"sitat":"Learning never exhausts the mind.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	},
 	{
-		"tittel":"Il Vernissageur  (Festsjef)",
-		"img":"ilvernissageur.png",
-		"mail":"ilvernissageur.leonardo@gmail.com",
-		"navn":"Ingrid Dahle",
-		"sitat":"The noblest pleasure is the joy of understanding.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
-	},
-	{
-		"tittel":"Il Evento Guida (Eksursjonsansvarlig)",
-		"img":"ileventoguida.png",
-		"mail":"ileventoguida.leonardo@gmail.com",
-		"navn":"Gjøril Fjeldstad",
-		"sitat":"Nothing strenghtens authority so much as silence.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
-	},
-	{
-		"tittel":"Direttore Artistico (Redaktør)",
-		"img":"dirretoreartistico.png",
-		"mail":"direttoreartistico.leonardo@gmail.com",
-		"navn":"Tobias Wulvik",
-		"sitat":"The human foot is a masterpiece of engineering and a work of art.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
-	},
-	{
-		"tittel":"Responsabile Pubblicitario (PR-ansvarlig)",
+		"tittel":"Responsabile Pubblicitario",
 		"img":"responsabilepubblicitario.png",
 		"mail":"markedsforing.leonardo@gmail.com",
 		"navn":"Herman Slyngstadli",
 		"sitat":"Art is never finished, only abondoned.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	},
 	{
-		"tittel":"Il Prima (Faddersjef)",
+		"tittel":"Direttore Artistico",
+		"img":"dirretoreartistico.png",
+		"mail":"direttoreartistico.leonardo@gmail.com",
+		"navn":"Tobias Wulvik",
+		"sitat":"The human foot is a masterpiece of engineering and a work of art.",
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
+	},
+	{
+		"tittel":"Il Vernissageur",
+		"img":"ilvernissageur.png",
+		"mail":"ilvernissageur.leonardo@gmail.com",
+		"navn":"Ingrid Dahle",
+		"sitat":"The noblest pleasure is the joy of understanding.",
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
+	},
+	{
+		"tittel":"Il Evento Guida",
+		"img":"ileventoguida.png",
+		"mail":"ileventoguida.leonardo@gmail.com",
+		"navn":"Gjøril Fjeldstad",
+		"sitat":"Nothing strenghtens authority so much as silence.",
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
+	},
+	{
+		"tittel":"Il Prima",
 		"img":"ilprima.png",
 		"mail":"ilprima.leonardo@gmail.com",
 		"navn":"Victoria Fjellbirkeland",
 		"sitat":"The greatest deception men suffer is from their own opinions.",
-		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Furthermore, we also want to include the history of Leonardo where students and alumni can read about Leonardo from its origins until today, milestones and achievements throughout the years. Maybe we can write down some tales and legends in the history part as well."
+		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	}
 ],
 "komite": [
