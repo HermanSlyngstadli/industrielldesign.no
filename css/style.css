@@ -562,6 +562,9 @@ div.panel {
 	height:300px;
 	width:auto;
 }
+.styreBildeBlock::before {
+	background:red;
+}
 .styreBildeBlock {
 	position: relative;
 	overflow: hidden;
@@ -590,7 +593,13 @@ div.panel {
 
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:900px) {
+	.styrePost:nth-child(odd) .styreBildeWrapper {
+		float:right;
+	}
+	.styrePost:nth-child(odd) .styreTekst {
+		float:right;
+	}
 	
 
 	#styret article:nth-child(odd)  .styrePost p {
