@@ -21,3 +21,7 @@ fyll  =	'<meta charset="utf-8">'
 
 
 head.innerHTML += fyll;
+
+function findActiveSite() {
+	for ()
+}

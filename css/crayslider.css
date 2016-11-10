@@ -28,6 +28,10 @@
 	float:left;
 	width:100%;
 	height:100%;
+	word-wrap: break-word;
+}
+.craysliderElementHeader {
+	font-size:2em;
 }
 .crayslider-previewElementWrapper {
 	height:100%;
@@ -44,6 +48,9 @@
 	width:70%;
 	float:left;
 	background:#ddd;
+}
+.crayslider-previewContentText-header {
+	font-size:3em;
 }
 .crayslider-nav-button {
 	display:block;
