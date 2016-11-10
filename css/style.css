@@ -30,7 +30,8 @@ html, body {
 /* -- Fonts, colors etc. -- */
 body {
 	font-family:'Raleway', sans-serif;
-	background:#FAFAFA;
+	/*background:#FAFAFA;*/
+	color:#182f36;
 }
 h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
@@ -208,7 +209,7 @@ a:hover {
 		background:#ddd;
 	}
 	.header a:hover {
-		background:red;
+		background:rgb(233,79,148);
 	}
 	.navBurger {
 		display:inline;
@@ -218,7 +219,7 @@ a:hover {
 		top:0;
 	}
 	.navBurger:hover {
-		background:rgba(255,255,255,0.2);
+		background:rgba(255,255,255,0.2) !important;
 	}
 	.panel.headerpanel {
 		display:none;
@@ -234,7 +235,7 @@ a:hover {
 /*--- SECTION HEADER ---*/
 .sectionHeader {
 	width: 100%;
-	height:32rem;
+	height:31rem;
 	background: #eee;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -259,11 +260,12 @@ a:hover {
 }
 
 .sectionTitle {
-	font-size: 2em;
+	font-size: 3em;
+	line-height: 1.3em;
 	background: #fff;
-	padding: 5px 10px;
+	padding: 0 .3em;
 	position: absolute;
-	bottom: -20px;
+	bottom: -0.854em;
 	left: 10%;
 }
 
@@ -273,14 +275,19 @@ a:hover {
 		height:auto;
 		padding-bottom:51%;
 	}
+	.centerText {
+		width:100%;
+	}
 }
 /* --- FOOTER --- */
 #footer {   
 	height: 600px;
 	width:100%;
+	line-height: 1.4em;
 	background-color: #2c2c2c;
 	color: #fff;
-	padding: 50px;
+	padding-top: 50px;
+	position:relative;
 }
 
 .footerLogo {
@@ -320,6 +327,13 @@ a:hover {
 }
 .fullLength {
 	width:100%;
+	position:absolute;
+	bottom:3em;
+}
+.fullLength p {
+	text-align: center;
+	font-size: .8em;
+	color:#aaa;
 }
 
 /* Fargen på ikonene */
@@ -357,40 +371,58 @@ a:hover {
 .careerArticleWrapper {
 	width:80%;
 	margin:0 auto;
-	margin-bottom:300px;
+	margin-bottom:150px;
 }
 .careerArticle {
 	width:100%;
-	margin-bottom:150px;
+	padding-left:5px;
+	margin-bottom:5px;
+	background:#fff;
 }
-.careerArticleImage {
+.careerImageCell {
 	width:30%;
-	height:150px;
+	height:100%;
+	float:left;
 	background:#ddd;
+}
+.careerImage {
+	height:100%;
+	width:100%;
 }
 .careerArticleTextWrapper {
 	width:70%;
 	height:100%;
+	float:right;
 	padding-left:3%;
+	padding-top:3em;
+	padding-bottom:3em;
 	display: inline-block;
 }
 
 #tipsAndTricksWrapper {
 	height:1200px;
 }
-.tipsAndTricksArticleWrapper {
-	width:25%;
+.tipsAndTricksArticle {
+	width:33.3333%;
 	height:300px;
+	padding:1em;
+	text-align:center;
 	float:left;
 }
-@media only screen and (max-width:1024px) {
-	.tipsAndTricksArticleWrapper {
-		width:33.333333%;
-	}
+.tipsAndTricksArticle h5 {
+	font-size: 1em;
+	font-weight:normal;
+	color:#182f36;
 }
-@media only screen and (max-width:800px) {
-	.tipsAndTricksArticleWrapper {
+@media only screen and (max-width:1024px) {
+	#tipsAndTricksWrapper {
+		height:1800px;
+	}
+	.tipsAndTricksArticle {
 		width:50%;
+	}
+	.careerArticleWrapper {
+		width:100%;
 	}
 }
 .tipsAndTricksImg {

@@ -23,9 +23,10 @@ var footerText = ''
 
 		+ '</a></div>'
 	+ '</div>'
-	+ '<div>'
+	+ '<div class="clearfix">'
 		+ '<div class="footerLeft">'
-			+   'Webredaktør: Herman Slyngstadli | Webdesign: Muggkopp</p>'
+			+'Webredaktør: Herman Slyngstadli<br />'
+			+'Webdesign: Muggkopp</p>'
 		+ '</div>'     
 
 		+ '<div class="footerRight">'
@@ -33,9 +34,9 @@ var footerText = ''
 			+   '7349 Trondheim</p>'
 		+ '</div>'
 	+ '</div>'
-	+ '<div class="fullLength">'
-		+ '<p>Copyright &copy; 2011 - 2016 LEONARDO Linjeforening for Industriell Design, NTNU'
-	+ '</div>'
-+ '</div>';
++'</div>'
++'<div class="fullLength">'
+	+ '<p>Copyright &copy; 2011 - 2016 LEONARDO, Linjeforening for Industriell Design NTNU'
++'</div>';
 
 footer.innerHTML = footerText;

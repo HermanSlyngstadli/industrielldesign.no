@@ -33,7 +33,7 @@ var db = {"styret": [
 	},
 	{
 		"tittel":"Direttore Artistico",
-		"img":"dirretoreartistico.png",
+		"img":"diretoreartistico.png",
 		"mail":"direttoreartistico.leonardo@gmail.com",
 		"navn":"Tobias Wulvik",
 		"sitat":"The human foot is a masterpiece of engineering and a work of art.",
