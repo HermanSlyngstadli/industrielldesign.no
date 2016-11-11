@@ -1,4 +1,4 @@
-* { padding: 0; margin: 0; }
+* { padding: 0; margin: 0;}
 html, body {height:100%;width:100%;}
 
 #frame{
@@ -9,17 +9,17 @@ html, body {height:100%;width:100%;}
 	background-color: lightyellow;
 }
 
-img{
-	padding-bottom: 2%;
-	z-index: -1;
-}
-
 .spalte{
 	width:49%;
 	height:100%;
 	float:left;
 	position: relative;
 	padding-right: 1%;
+}
+
+img{
+	padding-bottom: 2%;
+	z-index: -1;
 }
 
 h1{
@@ -33,6 +33,7 @@ h1{
 
 a{
 	opacity: 0.85;
+	border-bottom: none;
 }
 
 a:hover {
@@ -44,26 +45,19 @@ h1:hover {
 	color: #0092b5;
 }
 
-
-
-/*.t2{
-	position:absolute; bottom:-1%; left: 0%;
-	margin-top: 0;
-	z-index: 2;
-}*/
-
 #logobud{
-	width: 45%;
-	height: 40%;
+	width: 100%;
+	/*height: 40%;*/
 	display: inline-block;
-	/*position: relative;*/
+	position: relative;
 }
 
 #logo{
-	width: 40%;
+	width: 20%;
 	height: auto;
 	min-width: 50px;
-	/*position: absolute; top: 0px; left: 0px;*/
+	position: absolute; top: 0px; left: 42%;
+	z-index: 30;
 }
 
 #mainbed{
@@ -112,6 +106,16 @@ h1:hover {
 	margin-top: -10%;
 	z-index: 2;
 	display: inline-block;
+	/*float: right;*/
+}
+
+#protext{
+	/*width: 90%;
+	height: 5%;*/
+	padding-left: 15%;
+	margin-top: -10%;
+	z-index: 2;
+	/*display: inline-block;*/
 	/*float: right;*/
 }
 
