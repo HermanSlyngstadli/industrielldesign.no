@@ -48,27 +48,35 @@
 		<header class="sectionHeader"  style="background-image:url('img/readytogo.png')">
 			<h2 class="sectionTitle">oppslagsverk</h2>
 		</header>
-		<div class="searchField">
-			<div class="sokIkon"></div>
-			<form method="GET" action="wiki.html" target="_blank">
-				<input id="wikiSok" class="centerText" type="text" placeholder="Her søkes det">
-			</form>
+		<div class="searchFieldWrapper">
+			<div class="searchField">
+				<div class="sokIkonWrapper">
+					<div class="sokIkon"></div>
+				</div>
+				
+				<form method="GET" action="wiki.html" target="_blank">
+					<input id="wikiSok" class="centerText" type="text" placeholder="Hva lurer du på?">
+				</form>
+			</div>
 		</div>
 		<div class="articleList">
-			<button class="accordion">Artikler</button>
+			<button class="accordion">Alle Artikler</button>
 			<div class="panel">
 				<div class="verksted">
 					<h5>Verksted</h5>
 					<ul id="verksted">
-					</ul></div>
+					</ul>
+				</div>
 				<div class="programmer">
 					<h5>Programmer</h5>
 					<ul id="programmer">
-					</ul></div>
+					</ul>
+				</div>
 				<div class="lærere">
-					<h4>Lærere</h4>
+					<h5>Lærere</h5>
 					<ul id="laerere">
-					</ul></div>
+					</ul>
+				</div>
 				<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>-->
 			</div>
 		</div>
