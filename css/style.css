@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 /*
 
 	Funky style by the talented group:
@@ -24,23 +22,25 @@ html {
 	font-size:18px;
 	overflow-x: hidden;
 }
-html, body {
-	width:100%;
-}
+html, body {width:100%;}
+
 /* -- Fonts, colors etc. -- */
 body {
 	font-family:'Raleway', sans-serif;
 	/*background:#FAFAFA;*/
 	color:#182f36;
+    font-size: 16px;
 }
 h1, h2, h3, h4 {
 	font-family:'Open Sans', sans-serif;
 	font-weight: 800;
 	text-transform: uppercase;
 }
-h2 {
-	z-index:2;
-}
+
+h2 {z-index:2;}
+
+p {line-height: 1.2em;}
+
 a {
 	color: #0092b5;
 	text-decoration: none;
@@ -97,9 +97,8 @@ a:hover {
 	background:#0092b5;
 	color:#fff;
 }
-.header {
-	background:none;
-}
+.header {background:none;}
+
 .navBurger {
 	display:none;
 	position:absolute;
@@ -158,6 +157,9 @@ a:hover {
 .headerScrolled .burgerPart {
 	background: #0092b5;
 }
+.active.open .burgerPart{
+	background:#fff;
+}
 
 /* --- LOGO --- */
 #logoWrapper {
@@ -206,10 +208,16 @@ a:hover {
 	}
 	.header li {
 		width:100%;
-		background:#ddd;
+		background:#0092b5;
 	}
 	.header a:hover {
 		background:rgb(233,79,148);
+	}
+	.headerScrolled a {
+		color:#fff;
+	}
+	.open.navBurger:hover .burgerPart {
+		background:#0092b5;
 	}
 	.navBurger {
 		display:inline;
@@ -375,15 +383,13 @@ a:hover {
 }
 .careerArticle {
 	width:100%;
-	padding-left:5px;
-	margin-bottom:5px;
+	height:200px;
 	background:#fff;
 }
 .careerImageCell {
 	width:30%;
 	height:100%;
 	float:left;
-	background:#ddd;
 }
 .careerImage {
 	height:100%;
@@ -400,7 +406,7 @@ a:hover {
 }
 
 #tipsAndTricksWrapper {
-	height:1200px;
+	height:1300px;
 }
 .tipsAndTricksArticle {
 	width:33.3333%;
@@ -414,9 +420,25 @@ a:hover {
 	font-weight:normal;
 	color:#182f36;
 }
+.tipsAndTricksImageBlock {
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.tipsAndTricksImage {    
+	z-index: -1;
+    background-size: 150px 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 150px;
+    width: 150px;
+}
 @media only screen and (max-width:1024px) {
 	#tipsAndTricksWrapper {
-		height:1800px;
+		height:1900px;
 	}
 	.tipsAndTricksArticle {
 		width:50%;
@@ -430,11 +452,17 @@ a:hover {
 	height:auto;
 }
 
-.searchField {
+.searchFieldWrapper {
+	width:100%;
+	padding-bottom:27rem;
 	position: relative;
-	width: 400px;
-	margin: 200px auto;
-	margin-bottom: 500px;
+}
+.searchField {
+	width: 80%;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
 }
 
 #wikiSok[type=text] {
@@ -448,7 +476,10 @@ a:hover {
 #wikiSok[type=text]:focus {
 	outline: none;
 }
-
+.sokIkonWrapper {
+	width:20%;
+	height:100%;
+}
 /* Forstørrelsesglass runding */
 .sokIkon::before {
 	content: '';
@@ -483,7 +514,7 @@ a:hover {
 	transition: 0.4s;
 }
 .accordion.active, .accordion:hover {
-	background-color: #ddd;
+	background-color: #0092b5;
 }
 div.panel {
 	background-color: white;
@@ -492,7 +523,12 @@ div.panel {
 .panel.show {
 	display: block;
 }
-
+button.accordion {
+	width:100%;
+	padding:20px;
+	font-size:2em;
+	text-align:center;
+}
 .verksted, .programmer, .laerere {
 	width: 33%;
 	display: inline-block;
@@ -578,21 +614,24 @@ div.panel {
 }
 
 .styreTittel {
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: 400;
 	text-transform: none;
-	
 }
+
 .styreTekstWrapper {
 	float:right;
 	width:70%;
+    padding: 0 5%;
 }
+
 .styreBildeWrapper {
 	float: left;
 	width:30%;
 	height:100%;
 	overflow:hidden;
 }
+
 .styreBilde {
 	width: auto;
 	z-index: -1;
@@ -605,9 +644,7 @@ div.panel {
 	height:300px;
 	width:auto;
 }
-.styreBildeBlock::before {
-	background:red;
-}
+
 .styreBildeBlock {
 	position: relative;
 	overflow: hidden;
@@ -624,7 +661,7 @@ div.panel {
 	min-height: 100px;
 	width: 100%;
 	margin: 0;
-	padding: 40px 80px 20px 100px;
+	padding: 40px 0 20px 0;
 	text-align: right;
 	color: white;
 	font-size: 1.2em;
@@ -632,18 +669,13 @@ div.panel {
 	z-index: 3;
 }
 
-@media screen and (min-width: 1240px) {
-
-}
-
-@media screen and (min-width:900px) {
+@media screen and (min-width:1024px) {
 	.styrePost:nth-child(odd) .styreBildeWrapper {
 		float:right;
 	}
 	.styrePost:nth-child(odd) .styreTekst {
 		float:right;
 	}
-	
 
 	#styret article:nth-child(odd)  .styrePost p {
 		text-align: left;
@@ -651,38 +683,22 @@ div.panel {
 	}
 }
 
-@media screen and (max-width:1240px) and (min-width:768px) {
+@media screen and (max-width: 1024px) {
 	
 	.styrePost {
-		width: 100%;
-	}
-	
-	#styret article:nth-child(odd) .styrePost {
-		width: 100%;
-	}
-	
-	#styret article:nth-child(odd) .styrePost p {
-		padding-left: 10%;
-	}
-	
-	#styret article:nth-child(odd) .styrePost p, #styret article:nth-child(even) .styrePost p {
-		width: 60%;
-	}
-
-}
-
-@media screen and (max-width: 768px) {
-	
-	.styrePost {
-		padding: 0;
 		text-align: left;
 		height: auto;
 	}
-	
-	.styreBilde {
+    
+    .styreBildeBlock {
 		display: none;
 		float: none;
 	}
+    
+    .styreTekstWrapper {
+        width: 100%;
+        float: left;
+    }
 	
 	.styrePost p {
 		padding-bottom: 2%;
@@ -700,7 +716,7 @@ div.panel {
 
 .komiteTittel {
 	font-weight: 400;
-	font-size: 5em;
+	font-size: 2em;
 	
 }
 
@@ -736,8 +752,8 @@ div.panel {
 	}
 	
 	#komite article {
-		padding-left: 20px;
-		width: 80%;
+		padding: 0 5%;
+		width: 100%;
 	}
 	
 	.komiteFoto {
@@ -778,8 +794,8 @@ div.panel {
 	position: absolute;
 	top: 24px;
 	left: 0;
-	height: 5px;
-	width: 5px;
+	height: 10px;
+	width: 10px;
 	border: solid 3px #0092b5;
 	border-radius: 10px;
 	background-color: #fff;
@@ -845,16 +861,29 @@ div.panel {
 
 @media screen and (max-width: 640px) {
 	
-	.timelineBlock {
-		width: 80vw;
+    .timeline {
+		margin: 0 auto;
 	}
-	
-	.timeline h1 {
-		position: absolute;
-		left: -120px;
-	}
-	
-	.timeline {
-		margin-right: 0;
-	}
+    
+    .timelineBlock::before, .timelineBlock::after {
+        display: none;   
+    }
+    
+    .timelineBlock {
+        left: -200px;
+        text-align: justify;
+        margin: inherit auto;
+        background-color: #fff;
+        margin-top: 50px;
+    }
+    
+    .timelineBlock h3 {text-align: center;}
+}
+
+@media screen and (max-width: 400px) {
+    
+    .timelineBlock {
+        width: 300px;
+        left: -150px
+    }
 }
