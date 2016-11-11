@@ -1,0 +1,125 @@
+* { padding: 0; margin: 0; }
+html, body {height:100%;width:100%;}
+
+#frame{
+	width:60%;
+	height: 90%;
+	margin: auto;
+	margin-top: 3%;
+	background-color: lightyellow;
+}
+
+img{
+	padding-bottom: 2%;
+	z-index: -1;
+}
+
+.spalte{
+	width:49%;
+	height:100%;
+	float:left;
+	position: relative;
+	padding-right: 1%;
+}
+
+h1{
+	font-family: 'Open sans bold', sans-serif;
+	font-weight: 800;
+	color: black;
+	opacity: 0.75;
+	text-transform: uppercase;
+	font-size: 300%;
+}
+
+a{
+	opacity: 0.85;
+}
+
+a:hover {
+	color: #0092b5;
+	opacity: 1;
+}
+
+h1:hover {
+	color: #0092b5;
+}
+
+
+
+/*.t2{
+	position:absolute; bottom:-1%; left: 0%;
+	margin-top: 0;
+	z-index: 2;
+}*/
+
+#logobud{
+	width: 45%;
+	height: 40%;
+	display: inline-block;
+	/*position: relative;*/
+}
+
+#logo{
+	width: 40%;
+	height: auto;
+	min-width: 50px;
+	/*position: absolute; top: 0px; left: 0px;*/
+}
+
+#mainbed{
+	width: 50%;
+	height: auto;
+	float: right;
+	opacity: 0.85;
+}
+
+#mainstud{
+	width: 85%;
+	height: auto;
+	float: left;
+	opacity: 0.85;
+}
+
+#mainprosj{
+	width: 40%;
+	height: auto;
+	opacity: 0.85;
+}
+
+#mainomleo{
+	width:65%;
+	float: right;
+	opacity: 0.85;
+}
+
+/*headlines*/
+
+#bedtext{
+	position: relative;
+	width: 65%;
+	height: 10%;
+	padding-left: 25%;
+	padding-top: 6%;
+	margin-bottom: -2%;
+	z-index: 5;
+	/*float: right;*/
+}
+
+#omleotext{
+	width: 90%;
+	height: 5%;
+	/*padding-left: 15%;*/
+	margin-top: -10%;
+	z-index: 2;
+	display: inline-block;
+	/*float: right;*/
+}
+
+#studtext{
+	position: relative;
+	height: 5%;
+	width: 100%;
+	margin-bottom: -1%;
+	padding-left: 50%;
+	z-index: 2;
+}
