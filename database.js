@@ -104,48 +104,48 @@ var db = {"styret": [
 ],
 "tipsogtricks": [
 	{
-		"tittel":"Blyant",
-		"img":""
+		"tittel":"",
+		"img":"blyant.png"
 	},
 	{
 		"tittel":"For å få utbetalt stipendet må du betale semesteravgift! Gjør dette så fort som mulig.",
-		"img":""
+		"img":"cash.png"
 	},
 	{
 		"tittel":"Engasjer deg i et frivillig verv",
-		"img":""
+		"img":"hand.png"
 	},
 	{
 		"tittel":"Huskutkledningstøy",
-		"img":""
+		"img":"batman.png"
 	},
 	{
 		"tittel":"I Trondheim er det gjerne fire årstider på en dag. Husk allværsjakka.",
-		"img":""
+		"img":"paraply.png"
 	},
 	{
 		"tittel":"Delta på Leonardos arrangmenter",
-		"img":""
+		"img":"leo.png"
 	},
 	{
 		"tittel":"Last ned Mazemapappen for å navigere deg rundt på NTNU.",
-		"img":""
+		"img":"maze.png"
 	},
 	{
 		"tittel":"Bli med i NTNUI.",
-		"img":""
+		"img":"ntnui.png"
 	},
 	{
-		"tittel":"Vær flink tilå planlegge før du handler.",
-		"img":""
+		"tittel":"Vær flink til å planlegge før du handler.",
+		"img":"liste.png"
 	},
 	{
 		"tittel":"Kjøp brukte pensumbøker av studenter i kullene over deg.",
-		"img":""
+		"img":"bok.png"
 	},
 	{
-		"tittel":"Saks",
-		"img":""
+		"tittel":"",
+		"img":"saks.png"
 	}
 ],
 "arrangementer": [
@@ -193,22 +193,22 @@ var db = {"styret": [
 "karriere": [
 	{
 		"tittel":"Making Waves søker nye interaksjonsdesignere",
-		"img":"",
+		"img":"makingwaves.png",
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"EGGS vil ha deg med på laget!",
-		"img":"",
+		"img":"eggs.png",
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"Accenter vokser stadig. Ble med du og da vel.",
-		"img":"",
+		"img":"accenture.png",
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
 		"tittel":"Søk sommerjobb hos Blank Oslo!",
-		"img":"",
+		"img":"blank.png",
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	}
 ],
