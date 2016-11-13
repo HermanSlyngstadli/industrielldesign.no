@@ -228,7 +228,7 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
@@ -246,7 +246,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -255,7 +255,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -282,7 +282,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -291,10 +291,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -309,7 +309,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -318,7 +318,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -345,7 +345,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -354,10 +354,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -372,7 +372,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -381,7 +381,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -408,7 +408,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -417,10 +417,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -435,7 +435,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -444,7 +444,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -471,7 +471,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -480,10 +480,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -498,7 +498,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -507,7 +507,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -534,7 +534,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -543,10 +543,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -561,7 +561,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -570,7 +570,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -597,7 +597,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -606,10 +606,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -624,7 +624,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -633,7 +633,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -660,7 +660,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -669,10 +669,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -687,7 +687,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -696,7 +696,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -723,7 +723,7 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
@@ -732,10 +732,10 @@ var db = {"styret": [
 	{
 		"tittel":"Cutting bread",
 		"img":"CuttingBread.jpg",
-		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
+		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. ",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
@@ -750,7 +750,7 @@ var db = {"styret": [
 	{
 		"tittel":"Lite",
 		"img":"Lite.jpg",
-		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.Vi har studert det upretensiøse hverdagsverktøyet lommelykten, og flyttet det ut av skuret og inn i stua. LITE tilføyer et demokratisk perspektiv til nordisk design.",
+		"tekst":"Lysestaken er laget av ask i høy kvalitet, formet som en klassisk lommelykt.LITE har et diskret mønster på grepsflaten, som effektivt kommuniserer funksjonen og understreker det lekne forholdet mellom de to forskjellige lyskildene.",
 		"klasse":"1. klasse",
 		"year":"2015",
 		"eier":"Ane Bruheim Otterlei, Ragnhild Bakli, Maia Elisabeth Sirnes og Pia Sofie Sollund",
@@ -759,7 +759,7 @@ var db = {"styret": [
 	{
 		"tittel":"Radikal",
 		"img":"Radikal.jpg",
-		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. For å understreke samspillet mellom trekantene, har Radikal en utfordrende rødfarge som satt sammen med den rolige asken gir god kontrast. Pluss at det var ganske kult.",
+		"tekst":"Radikal er inspirert av fagverk. Fagverk bærer ofte tunge, industrielle installasjoner; her er fagverket et bæresystem for kroppen. Kontaktflatene er tilpasset trekantenes vinkler, som igjen er tilpasset kroppen. Når Radikal er i bruk vil de sterke vinklene bli forsterket ytterligere. ",
 		"klasse":"2. klasse",
 		"year":"2015",
 		"eier":"Susanne Rom og Cecilie Kristoffersen",
@@ -786,10 +786,11 @@ var db = {"styret": [
 	{
 		"tittel":"Boreal",
 		"img":"Boreal.jpg",
-		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. Den originale planen for hybelen gjorde den til en lang og tynn gang, for å skape et mer lunt rom delte vi hybelen i to: en gang og et oppholdsrom. I oppholdsrommet brukte vi ulike nivåer for å skape forskjellige rom innad i rommet. Det øverste nivået skaper en sofakrok som går helt ut i vinduskarmen, dette nivået kombinerer skrivebord og sitteplass og studenten står fritt til å velge hvordan han skal bruke dette området. Lys fra vinduet reflekteres i flaten og lyser opp rommet. Det neste nivået huser sengen, som lett kan gjemmes unna, og et lite nattbord.",
+		"tekst":"Gruppen ble enige om at det viktigste i prosjektet var å skape et hjem for studenten som skulle føles som ditt eget.Vi ønsket å skape fleksible og praktiske løsninger som ga rom for å sett et personlig preg på rommet. ",
 		"klasse":"2. klasse",
 		"year":"2014",
 		"eier":"Arne Henden Aaraas, Aurora Nicolaisen Brun og Christer Rebni",
 	},
+	
 ]
 };
