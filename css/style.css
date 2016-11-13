@@ -330,17 +330,6 @@ a:hover {
 		font-size: 2em;
 	}
 }
-
-/* --- GEOMETRI --- */
-
-.backgroundGeometry {
-	background-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1770.25 3170.81"><defs><style>.cls-1{fill:#f7f7f7;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>Geometri1</title><rect class="cls-1" x="-317.03" y="410.8" width="1684.8" height="635.97" transform="translate(817.82 -184) rotate(31.49)"/><rect class="cls-1" x="-261.29" y="2389.08" width="1538.99" height="635.97" transform="translate(-225.44 162.13) rotate(-12.76)"/></svg>');
-	top: 0;
-	left: 0;
-	height: 1000px;
-	width: 1000px;
-	z-index: -1000;
-}
 /* --- FOOTER --- */
 #footer {   
 	height: 600px;
