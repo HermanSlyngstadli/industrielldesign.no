@@ -3,10 +3,6 @@
 //		by Herman Slyngstadli
 //
 
-/*
-	To Do:
-		- highlighte preview slide
-*/
 
 // Init
 var sliderId = 'eventSlider';
@@ -41,7 +37,9 @@ craysliderWrapperWrapperHolder.className = 'craysliderWrapperWrapperHolder';
 var craysliderWrapper = document.createElement('ul');
 craysliderWrapper.className = 'craysliderWrapper'; // For styling off all sliders
 craysliderWrapper.id = craysliderWrapper.className + '-' + sliderId; // For identification of specific slider
-craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
+
+var sliderStateMin = false;
+
 
 craysliderWrapperWrapper.appendChild(craysliderWrapper);
 
@@ -52,6 +50,14 @@ window.onload = function() {
 		createSliderArrows();
 	}
 
+	if(window.innerWidth > 700) {
+		slidesOnEachPage = 3;
+	} else {
+		slidesOnEachPage = 1;
+	}
+
+	craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
+
 	createSliderElements();
 	makeElementsClickable();
 
@@ -60,11 +66,41 @@ window.onload = function() {
 	}
 
 	changePreviewSlide(0);
-	console.log(document.getElementsByClassName('craysliderElement'));
 
 	craysliderWrapperWrapperHolder.appendChild(craysliderWrapper);
 	craysliderWrapperWrapper.appendChild(craysliderWrapperWrapperHolder);
 	slider.appendChild(craysliderWrapperWrapper);
+
+	window.addEventListener('resize', function() {
+		if(window.innerWidth > 700) {
+			slidesOnEachPage = 3;
+		} else {
+			slidesOnEachPage = 1;
+		}
+
+		if (window.innerWidth > 700 && slidesOnEachPage == 3) {
+			adjustWidthOfElements(slidesOnEachPage);
+			if (currentSlide > Math.ceil(slides.length/slidesOnEachPage)) {
+				console.log('Oh shjit asklj');
+				currentSlide = 1;
+				animateSlider(0, -1);
+			}
+
+		} else if (window.innerWidth < 700 && slidesOnEachPage == 1) {
+			adjustWidthOfElements(slidesOnEachPage);
+
+		}
+	});
+}
+
+function adjustWidthOfElements(newSlidesOnEachPage) {
+	slidesOnEachPage = newSlidesOnEachPage;
+	craysliderWrapper.style.width = 100*Math.ceil(slides.length/slidesOnEachPage) + '%';
+	var elements = document.getElementsByClassName('craysliderElement');
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.width = 100/((slidesOnEachPage)*Math.ceil(slides.length/slidesOnEachPage)) + '%';
+		console.log(elements[i].style.width);
+	}
 }
 
 function createSliderElements() {
