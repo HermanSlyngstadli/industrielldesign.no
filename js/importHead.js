@@ -8,7 +8,7 @@ var head = document.head;
 var fyll;
 
 // Adding each element one by one for easier editing
-fyll  =	'<meta charset="utf-8">'
+fyll  =	'<meta charset="UTF-8">'
 +	'<meta lang="no">'
 +	'<meta name="description" content="Leonardo, Linjeforening for Industriell Design ved NTNU">'
 +	'<meta name="keywords" content="arrangementer, student, bedriftspresentasjon, workshop, ntnu, linjeforening">'
