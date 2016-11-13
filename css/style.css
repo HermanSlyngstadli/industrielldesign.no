@@ -70,11 +70,6 @@ a:hover {
 	width:80%;
 	margin:0 auto;
 }
-@media only screen and (max-width:1040px) {
-	.footerRight, .footerLeft {
-		width:100%;
-	}
-}
 /* --- HEADER --- */
 .header {
 	position: absolute;
@@ -400,6 +395,14 @@ a:hover {
 	text-align: center;
 	font-size: .8em;
 	color:#aaa;
+}
+
+@media screen and (max-width:640px) {
+	.footerRight, .footerLeft {
+		width:100%;
+		text-align:center;
+		margin-bottom: 0px;
+	}
 }
 
 /* Fargen på ikonene */
