@@ -19,7 +19,15 @@ html {background-image: none;}
 .bildebolk:hover{
 	cursor: pointer;
 }
-
+.header li a{
+	color:#0092b5;
+}
+.header li a::after, #header li a::before {
+	background:#0092b5;
+}
+.header .burgerWrapper .burgerPart {
+	background:#0092b5;
+}
 /*
 .proimg:hover{
 	opacity: 0.2;
