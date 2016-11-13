@@ -42,6 +42,7 @@
 	width:30%;
 	float:left;
 	background: #eee;
+	position:relative;
 }
 .crayslider-previewContentPicture {
 	height:100%;
@@ -50,7 +51,9 @@
 	background:#ddd;
 }
 .crayslider-previewContentText-header {
-	font-size:3em;
+	font-size:3.5em;
+	position:absolute;
+	left:60%;
 }
 .crayslider-nav-button {
 	display:block;

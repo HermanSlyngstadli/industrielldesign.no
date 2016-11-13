@@ -118,10 +118,6 @@ a:hover {
 .headerpanel a:hover::after,  .headerpanel a:hover::before{
 	max-width:100%;
 }
-.header a:hover {
-	color:#fff;
-}
-
 
 /*======Nav burger=======*/
 .navBurger {
@@ -445,6 +441,7 @@ section::after {
 #focusedEvent {
 	height:400px;
 	width: 100%;
+	margin-bottom:25px;
 }
 
 .careerArticleWrapper {
