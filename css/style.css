@@ -22,6 +22,7 @@ html {
 	font-size:18px;
 	overflow-x: hidden;
 }
+
 html, body {width:100%;}
 
 /* -- Fonts, colors etc. -- */
@@ -117,6 +118,10 @@ a:hover {
 .headerpanel a:hover::after,  .headerpanel a:hover::before{
 	max-width:100%;
 }
+.header a:hover {
+	color:#fff;
+}
+
 
 /*======Nav burger=======*/
 .navBurger {
@@ -310,14 +315,49 @@ a:hover {
 
 @media only screen and (max-width:1040px) {
 	.sectionHeader {
-		max-height:32rem;
+		max-height:28rem;
 		height:auto;
 		padding-bottom:51%;
 	}
+	
 	.centerText {
 		width:100%;
 	}
 }
+
+@media screen and (max-width:640px) {
+	.sectionTitle {
+		font-size: 2em;
+	}
+}
+
+/* --- GEOMETRI --- */
+
+section::before {
+	overflow: hidden;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	content: '';
+	height: 2500px;
+	width: 800px;
+	background-color: #f4f4f4;
+	transform: rotate(45deg);
+	z-index: -100;	
+}
+
+section::after {
+	overflow: hidden;
+	position: absolute;
+	top: 500%;
+	content: '';
+	height: 3500px;
+	width: 400px;
+	background-color: #f4f4f4;
+	transform: rotate(60deg);
+	z-index: -99;
+}
+
 /* --- FOOTER --- */
 #footer {   
 	height: 600px;
@@ -637,7 +677,7 @@ button.accordion {
 
 .styrePost {
 	margin: 0 auto;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 .styrePost p {
@@ -661,13 +701,16 @@ button.accordion {
 	width:30%;
 	height:100%;
 	overflow:hidden;
+	position: relative;
+	z-index: 4;
+	bottom: -5%;
 }
 
 .styreBilde {
 	width: auto;
 	height: 300px;
-	z-index: -1;
-	background-size:cover;
+	z-index: 4;
+	background-size: cover;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -680,10 +723,11 @@ button.accordion {
 	overflow: hidden;
 	height: 300px;
 }
+
 .styreNavn {
 	font-weight: 400;
 	text-transform: none;
-	margin-bottom:1em;
+	margin-bottom: 1em;
 }
 
 .sitatBoks {
@@ -691,12 +735,12 @@ button.accordion {
 	min-height: 100px;
 	width: 100%;
 	margin: 0;
-	padding: 40px 0 20px 0;
+	padding: 40px 5px 20px 5px;
 	text-align: right;
 	color: white;
 	font-size: 1.2em;
 	text-align: center;
-	z-index: 3;
+	z-index: 1;
 }
 
 @media screen and (min-width:1024px) {
@@ -724,12 +768,6 @@ button.accordion {
 		display: block;
 		float: none;
 	}
-	
-	styreBilde {
-		width: 50%;
-		height: auto;
-		left: 100%;
-	}
     
     .styreTekstWrapper {
         width: 100%;
@@ -743,7 +781,8 @@ button.accordion {
 	.styreBildeBlock {
 		height: 300px;
 		width: 300px;
-		margin-left: 5%;
+		margin-right: 5%;
+		margin-left: auto;
 		overflow: visible;
 		transform: none;
 	}
@@ -753,13 +792,41 @@ button.accordion {
 	}
 }
 
+@media screen and (max-width:600px) {
+	
+	.styreBildeWrapper {
+		float: none;
+	}
+
+	.styreBilde {
+		display: block;
+		margin: auto;
+		width: 80%;
+		height: auto;
+		z-index: -1;
+		background-size: none;
+		position: static;
+		left: 0;
+		-webkit-transform: none;
+		transform: none;
+	}
+
+	.styreBildeBlock {
+		margin: auto;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: auto;
+	}
+}
+
 /* --- Komiteene --- */
 #komite header {
 	margin-top: 200px;
 }
 
 #komite article {
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 }
 
 .komiteTittel {
@@ -775,6 +842,7 @@ button.accordion {
 	float: left;
 	width: 300px;
 	height: 300px;
+	background-size: cover;
 }
 
 .komiteLogo {
