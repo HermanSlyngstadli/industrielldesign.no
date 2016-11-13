@@ -687,66 +687,6 @@ button.accordion::before {
 	}
 }
 
-/*
-.bedriftingress {
-	margin: 0px 0px 100px 0px;
-
-}
-.bedriftartikkel{
-	margin: 0px 0px 100px 0px;
-	float: left;
-	width: 60%;
-}
-
-#bedtlf{
-	font-size: 11px;
-}
-.rightFloat {
-	float: right;
-}
-
-.rightFloat article{
-	margin-bottom: 100px;
-}
-.rightFloat ul{
-	list-style-type: none;
-}
-.bedkon h3{
-	color: #0092b5;
-}
-
-@media screen and (max-width:1040px) {
-	.bedriftWrapper {
-		
-	}
-}
-
-@media screen and (max-width:960px) {
-	.rightFloat{
-		float: none;
-	}
-	.bedriftWrapper {
-		width: 80%
-		margin: 0 auto;
-	}
-	.bedriftartikkel {
-		width:100%;
-	}
-	
-	.bedkon, .vikan {
-		display: block;
-		width: 40%;
-	}
-	
-	.bedkon {
-		float: left;
-	}
-	
-	.vikan {
-		float: right;
-	}
-} */
-
 /* --- About Leonardo --- */
 .introduksjon {
 	margin-bottom: 200px;
