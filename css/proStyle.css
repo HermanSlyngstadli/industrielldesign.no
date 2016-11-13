@@ -4,7 +4,7 @@ html {background-image: none;}
 
 #gallery{
 	width:100%;
-	margin-top: 5%;
+	margin-top: 3%;
 	position:relative;
 }
 
@@ -161,9 +161,9 @@ br{
 	#prosjhead{
 		font-size: 400%;
 	}
-	#gallery{
+	/*#gallery{
 		margin-top: 100px;
-	}
+	}*/
 	/*#rightview{
 		width: 50%;
 	}*/
