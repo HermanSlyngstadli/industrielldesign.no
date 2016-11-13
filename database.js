@@ -224,105 +224,116 @@ var db = {"styret": [
 	"Visualisering",
 	"Grafisk Design"
 ],
-prosjekter: [
+"prosjekter": [
 	{
-		"tittel":"",
-		"img":"",
+		"tittel":"KALIS3000",
+		"img":"leo.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"3. klasse",
+		"year":"2019",
+		"eier":"",
 	},
+	
 	{
-		"tittel":"",
-		"img":"",
+		"tittel":"zZz",
+		"img":"bed.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"58",
+		"year":"3009",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
-		"img":"",
+		"img":"studenter.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
-		"img":"",
+		"img":"forming.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
-		"img":"",
+		"img":"leo.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
-		"img":"",
+		"img":"leologo.png",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
 		"img":"",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
 		"img":"",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
 		"img":"",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
 		"img":"",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
+		"klasse":"",
+		"year":"",
+		"eier":"",
 	},
+	
 	{
 		"tittel":"",
 		"img":"",
 		"intro":"",
 		"tekst":"",
-		"eier": [
-
-		]
-	}
+		"klasse":"",
+		"year":"",
+		"eier":"",
+	},
+	
 ]
 };

@@ -3,17 +3,20 @@
 <head>
 	<script type="text/javascript" src="js/importHead.js" charset="utf-8"></script>
 	<title> Industrielldesign.no > Prosjekter </title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/proStyle.css">
 </head>
 <body>
 	<header id="header"></header>
 	<!-- START CONTENT -->
-	<div class="mainOuterWrapper">
-		<div class="mainInnerWrapper">
-			<!-- START PROJECTS -->
-			<section>
-				<!-- Prosjektene går her -->
-			</section>
-		</div>
+	<div id="gallery">
+		<!-- START PROJECTS -->
+		<h1 id="prosjhead">
+			Prosjekter
+		</h1>
+		<section id="projectbase" class="clearfix">
+			<!-- Prosjektene går her -->
+		</section>
 	</div>
 	<!-- END CONTENT -->
 	<footer id="footer"></footer>
@@ -22,5 +25,22 @@
 	<script type="text/javascript" src="js/importLogo.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/accordianmenu.js" charset="utf-8"></script>
 	<script type="text/javascript" src="database.js"></script>
+	<script type="text/javascript">
+		var bilder = document.getElementById('projectbase');
+		
+		for(i=0; i<db.prosjekter.length; i++) {
+		bilder.innerHTML += ''
+			+'<div class="bildebolk">'
+				+'<img src="img/prosjekter/' + db.prosjekter[i].img +'" class="proimg" alt="proImg"/>'
+				+'<p class="tease">'
+					+ db.prosjekter[i].tittel
+					+ '<br>'
+					+ db.prosjekter[i].klasse
+					+ '<br>'
+					+ db.prosjekter[i].year
+				+'</p>'
+			+'</div>'
+		}
+	</script>
 </body>
 </html>
