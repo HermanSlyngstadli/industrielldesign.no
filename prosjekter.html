@@ -11,8 +11,18 @@
 	<!-- START CONTENT -->
 	<div id="gallery">
 		<!-- START PROJECTS -->
+		<!-- fremhevet fokus-->
 		<div id="profokus">
-			<!-- fremhevet fokus-->
+			<div id="leftview">
+				<h2 id="namedrop">
+				</h2>
+				<p id="innhald">
+				</p>
+			</div>
+			<div id="rightview">
+				
+				<img src="img/prosjekter/kryss.png" alt="nonsens" id="krysser" onclick="closeFocus()"/>
+			</div>
 		</div>
 		<h1 id="prosjhead">
 			Prosjekter
@@ -30,7 +40,6 @@
 	<script type="text/javascript" src="database.js"></script>
 	<script type="text/javascript">
 		var bilder = document.getElementById('projectbase');
-		var proFokus = document.getElementById('profokus');
 		
 		for(i=0; i<db.prosjekter.length; i++) {
 		bilder.innerHTML += ''
@@ -47,10 +56,51 @@
 			+'</div>'
 		}
 		
-		//function fokus(){
-		//	proFokus.innerHTML += ''
-				
-		//}
+		var proFokus = document.getElementById('profokus');
+		var fokusTittel = document.getElementById('namedrop');
+		var fokusInnhald = document.getElementById('innhald');
+		var fokusImg = document.getElementById('rightview');
+		
+		function fokus(){
+			fokusTittel.innerHTML = 
+				db.prosjekter[1].tittel
+			fokusInnhald.innerHTML = 
+				db.prosjekter[1].eier
+				+ '<br>'
+				+ db.prosjekter[1].klasse
+				+ '<br>'
+				+ db.prosjekter[1].year
+				+ '<br>'
+				+ db.prosjekter[1].tekst
+			fokusImg.innerHTML =			
+				'<img src="img/prosjekter/' + db.prosjekter[1].img +'" id="fokusimg" alt="proImg"/>'
+				+'<img src="img/prosjekter/kryss.png" alt="nonsens" id="krysser" onclick="closeFocus()"/>'
+			proFokus.style.display = "block";
+			
+			/*proFokus.innerHTML += ''
+				+'<div class="leftview">'
+					+'<h2 class="namedrop">'
+						+ db.prosjekter[1].tittel
+					+'</h2>'
+					+'<p class="namedrop">'
+						+ db.prosjekter[1].eier
+						+ '<br>'
+						+ db.prosjekter[1].klasse
+						+ '<br>'
+						+ db.prosjekter[1].year
+						+ '<br>'
+						+ db.prosjekter[1].tekst
+					+'</p>'
+				+'</div>'
+				+'<div class="rightview">'
+					+'<img src="img/prosjekter/' + db.prosjekter[1].img +'" class="fokusimg" alt="proImg"/>'
+					+'<img src="img/prosjekter/kryss.png" alt="nonsens" class="krysser" />'
+				+'</div>'*/
+		}
+		
+		function closeFocus (){
+			proFokus.style.display = "none";
+		}
 		
 		//function teaser(){
 		//	var fade = document.getElementsByClassName("proimg")[3].style.opacity = "0.2";
