@@ -30,8 +30,8 @@
 			</div>
 			<div id="rightview">
 				
-				<img src="img/prosjekter/kryss.png" alt="nonsens" id="krysser" onclick="closeFocus()"/>
 			</div>
+			<img src="img/prosjekter/kryss.svg" alt="nonsens" id="krysser" onclick="closeFocus()"/>
 		</div>
 		<h1 id="prosjhead">
 			Prosjekter
@@ -83,8 +83,9 @@
 				+ db.prosjekter[1].tekst
 			fokusImg.innerHTML =			
 				'<img src="img/prosjekter/' + db.prosjekter[1].img +'" id="fokusimg" alt="proImg"/>'
-				+'<img src="img/prosjekter/kryss.png" alt="nonsens" id="krysser" onclick="closeFocus()"/>'
+				//+'<img src="img/prosjekter/kryss.svg" alt="nonsens" id="krysser" onclick="closeFocus()"/>'
 			proFokus.style.display = "block";
+			window.scrollTo(0, 0);
 			
 			/*proFokus.innerHTML += ''
 				+'<div class="leftview">'

@@ -44,6 +44,7 @@ html {background-image: none;}
 	border: none;
 	float: left;*/
 	background-size: cover;
+	background-position: 50% 50%;
 }
 
 #prosjhead{
@@ -80,6 +81,7 @@ html {background-image: none;}
 	position: relative;
 	/*display: inline-block;*/
 	float: left;
+	
 
 }
 
@@ -87,14 +89,14 @@ html {background-image: none;}
 
 #profokus{
 	width: 100%;
-	height: 31rem;
-	margin: auto;
+	height: auto;
 	background-color: #414042;
 	display: none;
+	position: relative;
 }
 
 #rightview{
-	width: 60%;
+	width: 100%;
 	height: 100%;
 	float: left;
 	position: relative;
@@ -109,21 +111,27 @@ html {background-image: none;}
 	padding: 6%;
 	background-color: #414042;
 	color: white;
+	min-height: 100%;
+	position:absolute;
+	z-index: 5000;
 }
 
 #fokusimg{
-	width: 80%;
+	width: 90%;
 	height: auto;
 	margin: auto;
 	padding-top: 5%;
+	padding-left:40%;
 	padding-bottom: 5%;
 }
 
 #krysser{
-	width: 60px;
+	width: 2%;
 	height: auto;
-	position: absolute; top: 5%; right: 5%;
-	z-index: 10;
+	position: absolute; right: 5%;
+	padding-top: 5%;
+	z-index: 10000;
+	min-width: 20px;
 }
 #krysser:hover {
 	cursor: pointer;
@@ -139,12 +147,23 @@ br{
 	.bildebolk{
 		width: 25%;
 	}
-	
+	/*#profokus{
+		height: 26rem;
+	}*/
 	#prosjhead{
 		font-size: 400%;
 	}
 	#gallery{
 		margin-top: 100px;
+	}
+	/*#rightview{
+		width: 50%;
+	}*/
+	#leftview{
+		width: 50%;
+	}
+	#fokusimg{
+		padding-left:50%;
 	}
 }
 
@@ -152,9 +171,33 @@ br{
 	.bildebolk{
 		width: 33.333333%;
 	}
-	
+	/*#profokus{
+		height: 20rem;
+	}*/
 	#prosjhead{
 		font-size: 300%;
+	}
+	/*#rightview{
+		width: 40%;
+	}
+	#leftview{
+		width: 60%;
+	}*/
+	/*#leftview{
+		width: 60%;
+	}
+	#fokusimg{
+		padding-left:60%;
+	}*/
+	#rightview{
+		width: 100%;
+	}
+	#leftview{
+		width: 100%;
+		position: relative;
+	}
+	#fokusimg{
+		padding-left: 5%;
 	}
 
 }
@@ -163,13 +206,25 @@ br{
 	.bildebolk{
 		width: 50%;
 	}
-	
+	#profokus{
+		height: 0%;
+	}
+	#rightview{
+		width: 100%;
+	}
+	#leftview{
+		width: 100%;
+		position: relative;
+	}
+	#fokusimg{
+		padding-left: 5%;
+	}
 	#prosjhead{
 		font-size: 200%;
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
 	.bildebolk{
 		width: 100%;
 	}
