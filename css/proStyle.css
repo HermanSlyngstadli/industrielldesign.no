@@ -1,10 +1,9 @@
 * { padding: 0; margin: 0; }
 html, body {height:100%;width:100%;}
+html {background-image: none;}
 
 #gallery{
-	/*background-color: black;*/
 	width:100%;
-	/*height:100%;*/
 	margin-top: 5%;
 	position:relative;
 }
@@ -17,6 +16,10 @@ html, body {height:100%;width:100%;}
 	opacity: 1;
 }
 
+.bildebolk:hover{
+	cursor: pointer;
+}
+
 /*
 .proimg:hover{
 	opacity: 0.2;
@@ -27,11 +30,11 @@ html, body {height:100%;width:100%;}
 	opacity: 1;
 }
 */
-img{
+/*img{
 	width:100%;
 	height:auto;
 	opacity:1;
-}
+}*/
 
 .proimg{
 	/*width:100%;
@@ -82,7 +85,53 @@ img{
 
 /*prosjektFOKUSstil*/
 
+#profokus{
+	width: 100%;
+	height: 31rem;
+	margin: auto;
+	background-color: #414042;
+	display: none;
+}
 
+#rightview{
+	width: 60%;
+	height: 100%;
+	float: left;
+	position: relative;
+	background-color: #414042;
+}
+
+#leftview{
+	width: 40%;
+	height: 100%;
+	float: left;
+	margin: auto;
+	padding: 6%;
+	background-color: #414042;
+	color: white;
+}
+
+#fokusimg{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#krysser{
+	width: 60px;
+	height: auto;
+	position: absolute; top: 5%; right: 5%;
+	z-index: 10;
+}
+#krysser:hover {
+	cursor: pointer;
+}
+
+br{
+	line-height: 2em;
+}
 
 /*MEDIARESPONS*/
 
@@ -120,7 +169,7 @@ img{
 	}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 	.bildebolk{
 		width: 100%;
 	}

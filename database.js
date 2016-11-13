@@ -231,7 +231,7 @@ var db = {"styret": [
 		"tekst":"En håndsag er skapt for å skjære effektiv og med stor presisjon. Det er et verktøy de fleste kjenner til, men som de færreste bruker i dagliglivet. Med Cutting Bread finner sagen sin plass i det moderne hverdagslivet, og skjærer brød bedre enn mer tradisjonelle brødkniver. Formspråket er saklig og enkelt, og kniven er laget i stål og ask for å gi den et skandinavisk uttrykk.",
 		"klasse":"1. klasse",
 		"year":"2015",
-		"eier":"Herman Slyngstadli, Axel Berggref Egenæs og Petter Mustvedt",
+		"eier":"Herman Slyngstadli, Axel Berggraf Egenæs og Petter Mustvedt",
 	},
 	
 	{
