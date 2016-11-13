@@ -76,30 +76,49 @@ a:hover {
 	width: 100%;
 	height:60px;
 	color:#fff;
-	z-index: 3;
+	z-index: 9001;
+	background:none;
 }
 .header ul {
 	float:right;
 }
 .header li {
 	float:left;
+	height:60px;
 	list-style-type:none;
+	padding:18px 20px;
 }
 .header a {
 	display:block;
 	color:#fff;
-	height:60px;
-	padding:18px 20px; /*-------- width of header --------*/
 	border:0;
-	font-weight:800;
+	font-weight:400;
+	position:relative;
 }
-.header a:hover::after {
-	width:10%;
-	height:10%;
-	transform: translate(0,12px);
+/*======Hover effect=======*/
+.headerpanel a::after, .headerpanel a::before {
+	content: '';
+	position: absolute;
+	width:100%;
+	height:1px;
+	max-width:0;
+	background:#fff;
+	transform-origin: center;
+	transition: all .2s ease;
 }
-.header {background:none;}
+.headerpanel a::after {
+	bottom: -4px;
+	left: 0;
+}
+.headerpanel a::before {
+	top:-4px;
+	right:0;
+}
+.headerpanel a:hover::after,  .headerpanel a:hover::before{
+	max-width:100%;
+}
 
+/*======Nav burger=======*/
 .navBurger {
 	display:none;
 	position:absolute;
@@ -116,7 +135,6 @@ a:hover {
 	transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
-
 }
 .burgerPart {
 	position:absolute;
@@ -143,6 +161,8 @@ a:hover {
 .open .burgerPart:last-child{
 	transform: rotate(45deg);
 }
+
+/*======Nav when scrolled=======*/
 .headerScrolled {
 	position:fixed;
 	background:#fff;    
@@ -154,6 +174,9 @@ a:hover {
 }
 .headerScrolled a {
 	color:#0092b5;
+}
+.headerScrolled .headerpanel a::after, .headerScrolled .headerpanel a::before {
+	background: #0092b5;
 }
 .headerScrolled .burgerPart {
 	background: #0092b5;
@@ -210,12 +233,19 @@ a:hover {
 	.header li {
 		width:100%;
 		background:#0092b5;
+		padding:0;
+	}
+	.header a {
+		padding:20px;
 	}
 	.header a:hover {
 		background:rgb(233,79,148);
 	}
 	.headerScrolled a {
 		color:#fff;
+	}
+	.headerpanel a::after, .headerpanel a::before {
+		display:none;
 	}
 	.open.navBurger:hover .burgerPart {
 		background:#0092b5;

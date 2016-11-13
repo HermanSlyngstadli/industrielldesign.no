@@ -108,7 +108,7 @@ var db = {"styret": [
 		"img":"blyant.png"
 	},
 	{
-		"tittel":"For å få utbetalt stipendet må du betale semesteravgift! Gjør dette så fort som mulig.",
+		"tittel":"For å få utbetalt stipendet må du betale semesteravgift!",
 		"img":"cash.png"
 	},
 	{
