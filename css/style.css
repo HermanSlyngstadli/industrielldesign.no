@@ -531,7 +531,7 @@ button.accordion {
 	text-align:center;
 }
 .verksted, .programmer, .laerere {
-	width: 33%;
+	width: 33.33%;
 	display: inline-block;
 	margin: auto;
 	list-style-position: inside;
@@ -635,6 +635,7 @@ button.accordion {
 
 .styreBilde {
 	width: auto;
+	height: 300px;
 	z-index: -1;
 	background-size:cover;
 	position: absolute;
@@ -642,8 +643,6 @@ button.accordion {
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
-	height:300px;
-	width:auto;
 }
 
 .styreBildeBlock {
@@ -692,14 +691,32 @@ button.accordion {
 	}
     
     .styreBildeBlock {
-		display: none;
+		display: block;
 		float: none;
+	}
+	
+	styreBilde {
+		width: 50%;
+		height: auto;
+		left: 100%;
 	}
     
     .styreTekstWrapper {
         width: 100%;
         float: left;
     }
+	
+	.styreBildeWrapper {
+		width: 100%;
+	}
+	
+	.styreBildeBlock {
+		height: 300px;
+		width: 300px;
+		margin-left: 5%;
+		overflow: visible;
+		transform: none;
+	}
 	
 	.styrePost p {
 		padding-bottom: 2%;
