@@ -10,9 +10,7 @@
 	<!-- SITE SPECIFIC CONTENT -->
 		<!-- START WIKI -->
 		<section>
-			<header class="sectionHeader">
-				<h2 class="sectionTitle">Glitterglittter</h2>
-			</header>
+			<div class="wikiBilde"></div>
 
 			<article class="wikiinfo">
 				<p id="articleP">Like on the other pages there is an image at the top spanning the width of the browser. This image is a javascript image-carousel containing all the article images. The image carousel will have right/left navigation to view all images. Navigating will push images into the image frame either from left to right or right to left, depending on the user input.
@@ -28,8 +26,48 @@
 	<!-- END CONTENT -->
 	<footer id="footer"></footer>
     
-    <!--<script type="text/javascript" src="wikiArtikler.json"></script>
-    <script type ="text/javascript" src="js/displayArticle.js" charset="utf-8"></script>-->
+    <script type="text/javascript" src="database.js"></script>
+    <script type="text/javascript">
+		// Array med titlene fra js-dokumentet
+		
+		var alleArtikkelTitler = [];
+		var alleArtikkelP = [];
+		
+		for (i=0; i < db.artikkel.length; i++) {
+			alleArtikkelTitler.push(db.artikkel[i].tittel.toLowerCase());
+			alleArtikkelP.push(db.artikkel[i].brodtekst);
+		}
+		
+		console.log(alleArtikkelTitler);
+		console.log(alleArtikkelP);
+
+		// Skal være det faktiske søket
+		var sok = window.location.href.split('=').pop();
+		console.log(sok)
+
+		function sokArticle() {
+
+			sok = sok.toLowerCase().trim();
+			// alleArtikkelTitler = array fra js-array med alle titler
+			var artikkelIndex = alleArtikkelTitler.indexOf(sok);
+			console.log(artikkelIndex);
+			return artikkelIndex;
+		}
+
+		function updateArticle() {
+
+			var artikkel = sokArticle(sok, alleArtikkelTitler);
+			
+			document.getElementsByClassName("wikiBilde")[0].innerHTML = '+<header class="sectionHeader" style="background-image:url(\'img/wiki/'+ db.artikkel[artikkel].image +'\')"><h2 class="sectionTitle">Glitterglittter</h2></header>';
+
+			document.getElementsByClassName("sectionTitle")[0].innerHTML = alleArtikkelTitler[artikkel];
+
+			document.getElementById("articleP").innerHTML = alleArtikkelP[artikkel];
+
+		}
+
+		updateArticle();
+	</script>
 	<script type="text/javascript" src="js/importHeader.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/importFooter.js" charset="utf-8"></script>
 	<script type="text/javascript" src="js/accordianmenu.js" charset="utf-8"></script>
