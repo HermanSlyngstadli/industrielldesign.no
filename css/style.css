@@ -30,8 +30,7 @@ body {
 	font-family:'Raleway', sans-serif;
 	/*background:#FAFAFA;*/
 	color:#182f36;
-    font-size: 16px;
-	background-image: url("img/Geometri/Geometri1");
+    	font-size: 16px;
 	
 }
 
@@ -409,7 +408,7 @@ a:hover {
 
 /* --- Student --- */
 #eventSlider {
-	height:300px;
+	height:200px;
 	width:100%;
 	overflow: hidden;
 	position:relative;
@@ -438,6 +437,7 @@ a:hover {
 .careerImage {
 	height:100%;
 	width:100%;
+	background-size: cover;
 }
 .careerArticleTextWrapper {
 	width:70%;
@@ -924,8 +924,6 @@ button.accordion {
 	background-color: #fff;
 	margin: 100px 0;
 }
-
-
 
 @media screen and (max-width: 1240px) {
 	.timelineBlock::before {

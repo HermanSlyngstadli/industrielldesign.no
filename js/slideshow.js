@@ -59,6 +59,9 @@ window.onload = function() {
 		createPreviewElements();
 	}
 
+	changePreviewSlide(0);
+	console.log(document.getElementsByClassName('craysliderElement'));
+
 	craysliderWrapperWrapperHolder.appendChild(craysliderWrapper);
 	craysliderWrapperWrapper.appendChild(craysliderWrapperWrapperHolder);
 	slider.appendChild(craysliderWrapperWrapper);

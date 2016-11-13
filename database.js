@@ -152,7 +152,7 @@ var db = {"styret": [
 	{
 		"tittel":"Halloween",
 		"img":"",
-		"tekst":"Det er halloweenfest på huset i år også!",
+		"tekst":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well.",
 		"date":"03.02",
 		"time":"20:00",
 		"location":"IPD"
@@ -202,7 +202,7 @@ var db = {"styret": [
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
 	{
-		"tittel":"Accenter vokser stadig. Ble med du og da vel.",
+		"tittel":"Accenture vokser stadig. Ble med du og da vel.",
 		"img":"accenture.png",
 		"tekst":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 	},
