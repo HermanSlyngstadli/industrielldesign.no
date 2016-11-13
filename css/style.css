@@ -93,9 +93,10 @@ a:hover {
 	border:0;
 	font-weight:800;
 }
-.header a:hover {
-	background:#0092b5;
-	color:#fff;
+.header a:hover::after {
+	width:10%;
+	height:10%;
+	transform: translate(0,12px);
 }
 .header {background:none;}
 
