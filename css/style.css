@@ -635,6 +635,7 @@ button.accordion::before {
 .rightFloat {
 	float: right;
 }
+
 .rightFloat article{
 	margin-bottom: 100px;
 }
@@ -647,7 +648,7 @@ button.accordion::before {
 
 @media screen and (max-width:960px) {
 	.rightFloat{
-		float:none;
+		float: none;
 	}
 	.bedriftWrapper {
 		width:90%
