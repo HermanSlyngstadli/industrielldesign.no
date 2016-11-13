@@ -500,7 +500,7 @@ a:hover {
 		padding-top:0;
 	}
 	.careerArticle {
-    		height: 300px;
+    		height: 350px;
 	}
 	.careerImageCell {
 		width:100%;
@@ -630,8 +630,16 @@ button.accordion::before {
 }
 
 .verksted ul, .programmer ul, .laerere ul {
-	
 	list-style-type: none;
+}
+@media only screen and (max-width:900px) {
+	.verksted, .programmer, .laerere {
+		width:100%;
+		margin-bottom:10px;
+	}
+	#wikiSok[type=text] {
+		font-size: 1.5em;
+	}
 }
 
 /* --- WikiArticle --- */
@@ -675,10 +683,6 @@ button.accordion::before {
 }
 
 @media screen and (max-width: 930px) {
-	.bedriftWrapper {
-		margin: 0 5% 0 2%;
-	}
-	
 	.vikan, .bedkon {
 		display: inline-block;
 		margin-top: 0;
