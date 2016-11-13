@@ -23,7 +23,7 @@ html {
 	overflow-x: hidden;
 	background-image:url(../img/Geometri/Geometri1.svg);
 	background-repeat: repeat-y;
-    background-size: 100% auto;
+    	background-size: 100% auto;
 }
 
 html, body {width:100%;}
@@ -328,7 +328,7 @@ a:hover {
 
 @media screen and (max-width:640px) {
 	.sectionTitle {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 /* --- FOOTER --- */
@@ -411,8 +411,13 @@ a:hover {
 	position:relative;
 }
 #focusedEvent {
-	height:400px;
+	height:27rem;
 	width: 100%;
+}
+@media only screen and (max-width:900px) {
+	#focusedEvent {
+		height:15rem;
+	}
 }
 
 .careerArticleWrapper {
@@ -434,12 +439,12 @@ a:hover {
 .careerImage {
 	height:100%;
 	width:100%;
-    	background-size:;
+    	background-size:120px auto;
     	background-repeat: no-repeat;
+    	background-position:50% 50%;
 }
 .careerArticleTextWrapper {
 	width:70%;
-	height:100%;
 	float:right;
 	padding-left:3%;
 	padding-top:3em;
@@ -487,6 +492,31 @@ a:hover {
 	}
 	.careerArticleWrapper {
 		width:100%;
+	}
+}
+@media only screen and (max-width:600px) {
+	.careerArticleTextWrapper {
+		width:100%;
+		padding-top:0;
+	}
+	.careerArticle {
+    		height: 300px;
+	}
+	.careerImageCell {
+		width:100%;
+		height:60%;
+	}
+	.careerImage {
+		background-size: 80px auto;
+	}
+	.tipsAndTricksArticle {
+    		font-size: .9em;
+	}
+	.tipsAndTricksImageBlock {
+		height:250px;
+	}
+	.tipsAndTricksTextWrapper {
+		margin-top:-20px;
 	}
 }
 .tipsAndTricksImg {
@@ -752,21 +782,20 @@ button.accordion::before {
 }
 
 @media screen and (max-width: 1024px) {
-	
 	.styrePost {
 		text-align: left;
 		height: auto;
 	}
     
-    .styreBildeBlock {
+	    .styreBildeBlock {
 		display: block;
 		float: none;
 	}
-    
-    .styreTekstWrapper {
-        width: 100%;
-        float: left;
-    }
+
+	.styreTekstWrapper {
+		width: 100%;
+		float: left;
+	}
 	
 	.styreBildeWrapper {
 		width: 100%;
