@@ -64,6 +64,42 @@ var db = {"styret": [
 		"beskrivelse":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well."
 	}
 ],
+
+"artikkel": [
+	{
+		"tittel": "Laserkutter",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!",
+		"image": "batman.png",
+		
+	},
+	
+	{
+		"tittel": "Photoshop",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!"
+	},
+	
+	{
+		"tittel": "Illustrator",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!"
+	},
+	
+	{
+		"tittel": "Indesign",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!"
+	},
+	
+	{
+		"tittel": "sirkelsag",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!"
+	},
+	
+	{
+		"tittel": "Rød sofa",
+		"brodtekst": "Er du gira på å lære å arrangere workshops og bedriftpresentasjoner, skape nye kontakter og være Leonardos ansikt utad til relevante bedrifter? Da er Bedriftskomiteen noe for deg! Bedriftskomiteen, blant venner kalt BK, er komiteen som bringer inntekt til linjeforeningen samtidig som den skaper bånd mellom næringslivet og studentene på IPD. Med andre ord er BK en viktig komité hvor du får nyttig erfaring, og en mulighet til å danne kontakt med potensielle arbeidsgivere som er verdifull når du selv skal ut i jobb. I tillegg er det lite som matcher rushet du får når du lander en ny avtale og får penger i kassa til Leonardo! Hvis du er en engasjert student som vil selge Leonardo linjeforening for alt den er verdt, trenger vi akkurat deg til å søke BK!"
+	}
+	
+],
+
 "komite": [
 	{
 		"tittel":"bedkom",

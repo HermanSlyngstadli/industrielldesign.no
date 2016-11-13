@@ -23,6 +23,7 @@
 	position:absolute;
 }
 .craysliderElement {
+	cursor: pointer;
 	list-style-type:none;
 	display:block;
 	float:left;
@@ -74,6 +75,7 @@
 	background: #fff;
 }
 .crayslider-nav-button {
+	cursor: pointer;
 	display:block;
 	width:10%;
 	height:100%;

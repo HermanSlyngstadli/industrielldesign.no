@@ -3,19 +3,18 @@
 //		by Tobias Wulvik
 //
 
-
-
-
 // Array med titlene fra json-dokumentet
-var alleArtikkelTitler = ["laserkutter", "rød benk", "sag", "styret"];
+var alleArtikkelTitler = db.artikkel.tittel//["laserkutter", "rød benk", "sag", "styret"];
 console.log(alleArtikkelTitler);
 
+
+
 // Array med titlene fra json-dokumentet
-var alleArtikkelP = ["1Dette er en paragraf", "2Dette er en paragraf", "3Dette er en paragraf", "4Dette er en paragraf"];
+var alleArtikkelP = db.artikkel.brodtekst//["1Dette er en paragraf", "2Dette er en paragraf", "3Dette er en paragraf", "4Dette er en paragraf"];
 console.log(alleArtikkelP);
 
 // Skal være det faktiske søket
-var sok = "Sag";
+var sok = window.location.href.split('=').pop();
 
 function sokArticle() {
     
