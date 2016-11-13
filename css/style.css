@@ -622,8 +622,9 @@ button.accordion::before {
 }
 
 .verksted, .programmer, .laerere {
-	width: 32.9%;
-	display: inline-block;
+	width: 33.33333%;
+	display: block;
+	float:left;
 	margin: auto;
 	text-align: center;
 }
@@ -857,7 +858,6 @@ button.accordion::before {
 		width: 80%;
 		height: auto;
 		z-index: -1;
-		background-size: none;
 		position: static;
 		left: 0;
 		-webkit-transform: none;

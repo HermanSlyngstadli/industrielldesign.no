@@ -31,6 +31,10 @@
 	word-wrap: break-word;
 	padding:10px;
 }
+.craysliderElement:hover {
+	background:#0092b5;
+	color:#fff;
+}
 .craysliderElementHeader {
 	font-size:2em;
 }
@@ -106,9 +110,6 @@
 	}
 	.craysliderElementHeader {
 		font-size: 1.5em;
-	}
-	.craysliderElementText {
-		display:none;
 	}
 }
 

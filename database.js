@@ -152,7 +152,7 @@ var db = {"styret": [
 	{
 		"tittel":"Halloween",
 		"img":"",
-		"tekst":"This section should contain an introduction to the committee leaders as well as contact info. It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well.",
+		"tekst":"It should also have a description of the different committees. What they do, and how they contribute. Maybe we can write down some tales and legends in the history part as well.",
 		"date":"03.02",
 		"time":"20:00",
 		"location":"IPD"
