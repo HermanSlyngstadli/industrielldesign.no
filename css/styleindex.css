@@ -12,6 +12,10 @@ html{
 	margin-top: 3%;
 }
 
+#mobilindex{
+	display: none;
+}
+
 .spalte{
 	width:49%;
 	height:100%;
@@ -150,6 +154,59 @@ h1:hover {
 @media only screen and (max-width: 900px) {
 	h1{
 		font-size: 150%;
+	}
+	
+	#frame{
+		display: none;
+	}
+	
+	#mobilindex{
+		display: block;
+		position:relative;
+		width: 100%;
+		height: 100vh;
+	}
+	
+	a {
+		display: block;
+		width: 50%;
+		height: 50vh;
+		/*background-color: black;*/
+		float: left;
+		opacity: 0.8;
+	}
+	
+	#mobS{
+		background-image: url('../img/index/studenter.png');
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	#mobB{
+		background-image: url('../img/index/bed.png');
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	#mobP{
+		background-image: url('../img/index/forming.png');
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	#mobA{
+		background-image: url('../img/index/leo.png');
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+	#moblogo{
+		width:20%;
+		height: auto;
+		position: absolute; top: 40%; left: 40%;
+		z-index:10;
+	}
+	.mobtext{
+		color: black;
+		text-align: center;
+		padding-top: 25vh;
+		opacity: 1;
 	}
 }
 
