@@ -9,28 +9,38 @@ html, body {height:100%;width:100%;}
 	position:relative;
 }
 
+.bildebolk:hover .proimg {
+	opacity: 0.2;
+}
 
-.proImg:hover{
+.bildebolk:hover .tease {
+	opacity: 1;
+}
+
+/*
+.proimg:hover{
 	opacity: 0.2;
 }
 
 .tease:hover{
-	/*display: block;*/
+	display: block;
 	opacity: 1;
 }
-
+*/
 img{
 	width:100%;
 	height:auto;
+	opacity:1;
 }
 
-.proImg{
-	width:100%;
+.proimg{
+	/*width:100%;
 	height: auto;
-	/*margin-bottom: -4px;*/
+	margin-bottom: -4px;
 	padding: 0 0;
 	border: none;
-	float: left;
+	float: left;*/
+	background-size: cover;
 }
 
 #prosjhead{
@@ -52,7 +62,7 @@ img{
 }
 
 .tease{
-	position: absolute; top: 20%; left: 8%;
+	position: absolute; top: 40px; left: 30px;
 	font-family: 'Open sans bold', sans-serif;
 	font-weight: 800;
 	color: black;
@@ -63,11 +73,18 @@ img{
 
 .bildebolk{
 	width:20%;
-	height: auto;
+	height: 180px;
 	position: relative;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: left;
+
 }
+
+/*prosjektFOKUSstil*/
+
+
+
+/*MEDIARESPONS*/
 
 @media only screen and (max-width: 1200px) {
 	.bildebolk{
