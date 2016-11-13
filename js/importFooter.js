@@ -1,6 +1,6 @@
 //
 //	Import Footer
-//		by Herman Slyngstadli
+//		by Tobias Wulvik
 //
 var footer = document.getElementById('footer');
 
@@ -23,6 +23,15 @@ var footerText = ''
 
 		+ '</a></div>'
 	+ '</div>'
+
++'<div class="footerNav header">'
++'<ul class="panel headerpanel">'
+	+'<li><a href="prosjekter.html">Prosjekter</a></li>'
+	+'<li><a href="student.html">Student</a></li>'
+	+'<li><a href="business.html">Bedrift</a></li>'
+	+'<li><a href="aboutLeo.html">Om Leonardo</a></li>' 
++'</ul>'
++'</div>'
 	+ '<div class="clearfix">'
 		+ '<div class="footerLeft">'
 			+'Webredaktør: Herman Slyngstadli<br />'
@@ -34,6 +43,7 @@ var footerText = ''
 			+   '7349 Trondheim</p>'
 		+ '</div>'
 	+ '</div>'
+
 +'</div>'
 +'<div class="fullLength">'
 	+ '<p>Copyright &copy; 2011 - 2016 LEONARDO, Linjeforening for Industriell Design NTNU'
