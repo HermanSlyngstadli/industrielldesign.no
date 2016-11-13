@@ -646,44 +646,74 @@ button.accordion::before {
 }
 
 /* --- Business --- */
-.bedriftWrapper {
-	overflow: auto;
-}
-.bedriftingress {
-	margin: 0px 0px 100px 0px;
 
+.bedriftWrapper {
+	margin: 0 5% 0 10%;
 }
-.bedriftartikkel{
-	margin: 0px 0px 100px 0px;
-	float: left;
-	width: 60%;
-}
-#bedtlf{
-	font-size: 11px;
-}
+
 .rightFloat {
 	float: right;
 }
-.rightFloat article{
-	margin-bottom: 100px;
+
+.bedriftartikkel {
+	width: 50%;
+	margin-bottom: 50px;
 }
-.rightFloat ul{
-	list-style-type: none;
-}
-.bedkon{
+
+.bedkon h3 {
 	color: #0092b5;
 }
 
-@media screen and (max-width:960px) {
-	.rightFloat{
-		float:none;
-	}
+#bedtlf{
+	font-size: 11px;
+}
+
+.vikan {
+	margin-top: 50px;
+	list-style-position: inside;
+}
+
+@media screen and (max-width: 930px) {
 	.bedriftWrapper {
-		width:90%
-		margin:0 auto;
+		margin: 0 5% 0 2%;
 	}
+	
+	.vikan, .bedkon {
+		display: inline-block;
+		margin-top: 0;
+		width: 50%;
+		margin-left: 0;
+	}
+	
+	.bedkon {
+		float: left;
+	}
+	
 	.bedriftartikkel {
-		width:100%;
+		width: 80%;
+	}
+	
+	.rightFloat {
+		float: none;
+		margin-bottom: 5%;
+	}
+}
+
+@media screen and (max-width:800px) {
+	.rightFloat {
+		display: block;
+	}
+	
+	.vikan, .bedkon {
+		width: 100%;
+	}
+	
+	.bedkon {
+		margin-bottom: 50px;
+	}
+	
+	.vikan {
+		width: 80%;
 	}
 }
 
