@@ -538,8 +538,8 @@ a:hover {
 .sokIkon::after {
 	content: '';
 	position: absolute;
-	top: 32px;
-	left: 46px;
+	top: 30px;
+	left: 43px;
 	height: 30px;
 	width: 2px;
 	transform: rotate(135deg);
@@ -556,30 +556,53 @@ a:hover {
 	outline: none;
 	transition: 0.4s;
 }
+
 .accordion.active, .accordion:hover {
+	color: #fff;
 	background-color: #0092b5;
 }
+
 div.panel {
 	background-color: white;
 	display: none;
 }
+
 .panel.show {
 	display: block;
 }
-button.accordion {
-	width:100%;
-	padding:20px;
-	font-size:2em;
-	text-align:center;
+
+.articleList .panel {
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
+
+button.accordion {
+	width: 100%;
+	padding: 20px;
+	padding-left: 50px;
+	font-size: 2em;
+	text-align: center;
+}
+
+button.accordion::before {
+	width: 0; 
+	height: 0; 
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+	border-left: 60px solid green;
+}
+
 .verksted, .programmer, .laerere {
-	width: 33.33%;
+	width: 32.9%;
 	display: inline-block;
 	margin: auto;
-	list-style-position: inside;
+	text-align: center;
 }
 
-
+.verksted ul, .programmer ul, .laerere ul {
+	
+	list-style-type: none;
+}
 
 /* --- WikiArticle --- */
 .wikiinfo{
@@ -589,13 +612,13 @@ button.accordion {
 }
 
 #noe {
-	margin:80px 0;
+	margin: 80px 0;
 	
 }
 
 /* --- Business --- */
 .bedriftWrapper {
-	overflow:auto;
+	overflow: auto;
 }
 .bedriftingress {
 	margin: 0px 0px 100px 0px;
@@ -603,8 +626,8 @@ button.accordion {
 }
 .bedriftartikkel{
 	margin: 0px 0px 100px 0px;
-	float:left;
-	width:60%;
+	float: left;
+	width: 60%;
 }
 #bedtlf{
 	font-size: 11px;
@@ -798,23 +821,13 @@ button.accordion {
 }
 
 #komite article {
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 }
 
 .komiteTittel {
 	font-weight: 400;
 	font-size: 2em;
 	
-}
-
-.komiteFoto {
-	position: relative;
-	top: 50px;
-	left: -40px;
-	float: left;
-	width: 300px;
-	height: 300px;
-	background-size: cover;
 }
 
 .komiteLogo {
@@ -825,12 +838,13 @@ button.accordion {
 }
 
 @media screen and (min-width:1080px) {
-	#komite article:nth-child(odd) > .komiteFoto {
-		float: right;
+	
+	#komite article > p {
+		width: 62%;
 	}
 	
-	#komite article:nth-child(odd) > p {
-		width: 62%;
+	#komite article:nth-child(odd) {
+		margin-left: 500px;
 	}
 }
 
