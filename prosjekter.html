@@ -68,7 +68,7 @@
 		var bilder = document.getElementById('projectbase');
 		
 		for(i=0; i<db.prosjekter.length; i++) {
-		bilder.innerHTML += ''
+			bilder.innerHTML += ''
 			+'<div class="careerImageCell bildebolk" onclick="fokus()">'
 				//+'<img src="img/prosjekter/' + db.prosjekter[i].img +'" class="proimg" alt="proImg"/>'
 				+'<div class="careerImage proimg" style="background-image:url(\'img/prosjekter/'+ db.prosjekter[i].img +'\')"></div>'
@@ -79,7 +79,15 @@
 					+ '<br>'
 					+ db.prosjekter[i].year
 				+'</p>'
-			+'</div>'
+			+'</div>';
+		}
+		
+		for (var i = 0; i < bilder.children.length; i++) {
+			(function(i){
+				bilder.children[i].onclick = function(){
+					fokus(i);
+				}
+			})(i);
 		}
 		
 		var proFokus = document.getElementById('profokus');
@@ -87,19 +95,19 @@
 		var fokusInnhald = document.getElementById('innhald');
 		var fokusImg = document.getElementById('rightview');
 		
-		function fokus(){
+		function fokus(bilde){
 			fokusTittel.innerHTML = 
-				db.prosjekter[1].tittel
+				db.prosjekter[bilde].tittel
 			fokusInnhald.innerHTML = 
-				db.prosjekter[1].eier
+				db.prosjekter[bilde].eier
 				+ '<br>'
-				+ db.prosjekter[1].klasse
+				+ db.prosjekter[bilde].klasse
 				+ '<br>'
-				+ db.prosjekter[1].year
+				+ db.prosjekter[bilde].year
 				+ '<br>'
-				+ db.prosjekter[1].tekst
+				+ db.prosjekter[bilde].tekst
 			fokusImg.innerHTML =			
-				'<img src="img/prosjekter/' + db.prosjekter[1].img +'" id="fokusimg" alt="proImg"/>'
+				'<img src="img/prosjekter/' + db.prosjekter[bilde].img +'" id="fokusimg" alt="proImg"/>'
 				//+'<img src="img/prosjekter/kryss.svg" alt="nonsens" id="krysser" onclick="closeFocus()"/>'
 			proFokus.style.display = "block";
 			window.scrollTo(0, 0);

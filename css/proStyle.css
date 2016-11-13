@@ -116,7 +116,7 @@ html {background-image: none;}
 	height: 100%;
 	float: left;
 	margin: auto;
-	padding: 6%;
+	padding: 5%;
 	background-color: #414042;
 	color: white;
 	min-height: 100%;
@@ -138,7 +138,7 @@ html {background-image: none;}
 	height: auto;
 	position: absolute; right: 5%;
 	padding-top: 5%;
-	z-index: 10000;
+	z-index: 7000;
 	min-width: 20px;
 }
 #krysser:hover {
@@ -168,10 +168,10 @@ br{
 		width: 50%;
 	}*/
 	#leftview{
-		width: 50%;
+		width: 55%;
 	}
 	#fokusimg{
-		padding-left:50%;
+		padding-left:55%;
 	}
 }
 
