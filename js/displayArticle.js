@@ -20,7 +20,7 @@ var sok = "Sag";
 function sokArticle() {
     
 	sok = sok.toLowerCase().trim();
-	// alleArtikkelTitler = array fra xml med alle titler
+	// alleArtikkelTitler = array fra js-array med alle titler
 	var artikkelIndex = alleArtikkelTitler.indexOf(sok);
 	return artikkelIndex;
 }
