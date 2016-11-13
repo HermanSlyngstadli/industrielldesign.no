@@ -20,18 +20,9 @@ var footerText = ''
 		+   '<div><a href="https://www.behance.net/IndustrialDesignNTNU" target="_blank">'
 			// behancebilde i svg-format (class="socialLogo")
 			+ '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g class="socialLogo"><path d="M14.3 15.6c0 0 1.7-0.1 1.7-2.1 0-2-1.1-3-2.9-3l-6 0v11.1h6.1c0 0 3 0.1 3-3.3C16.3 18.2 16.5 15.6 14.3 15.6zM9.3 12.1h3.1c0 0 1 0 1 1.4 0 1.4-1 1.4-1 1.4H9.3V12.1zM12.7 19.9H9.3v-3.3h3.3c0 0 1.7 0 1.7 1.7S12.9 19.9 12.7 19.9z"/><path d="M21 13.2c-4.2 0-4.2 4.2-4.2 4.2s-0.3 4.2 4.2 4.2c0 0 3.9 0 3.9-3.3h-2.2c0 0 0 1.7-1.7 1.7 0 0-1.7 0-1.7-2.2 0 0 4.4 0 5.5 0C24.9 16.6 24.9 13.2 21 13.2zM19.3 16.6c0 0 0-1.7 1.7-1.7s1.7 1.7 1.7 1.7H19.3z"/><rect x="18.8" y="11.6" width="4.4" height="1.1"/></g></svg>'
-
 		+ '</a></div>'
 	+ '</div>'
 
-+'<div class="footerNav header">'
-+'<ul class="panel headerpanel">'
-	+'<li><a href="prosjekter.html">Prosjekter</a></li>'
-	+'<li><a href="student.html">Student</a></li>'
-	+'<li><a href="business.html">Bedrift</a></li>'
-	+'<li><a href="aboutLeo.html">Om Leonardo</a></li>' 
-+'</ul>'
-+'</div>'
 	+ '<div class="clearfix">'
 		+ '<div class="footerLeft">'
 			+'Webredaktør: Herman Slyngstadli<br />'
