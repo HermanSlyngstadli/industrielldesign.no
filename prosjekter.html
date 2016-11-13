@@ -11,6 +11,9 @@
 	<!-- START CONTENT -->
 	<div id="gallery">
 		<!-- START PROJECTS -->
+		<div id="profokus">
+			<!-- fremhevet fokus-->
+		</div>
 		<h1 id="prosjhead">
 			Prosjekter
 		</h1>
@@ -30,8 +33,9 @@
 		
 		for(i=0; i<db.prosjekter.length; i++) {
 		bilder.innerHTML += ''
-			+'<div class="bildebolk">'
-				+'<img src="img/prosjekter/' + db.prosjekter[i].img +'" class="proimg" alt="proImg"/>'
+			+'<div class="careerImageCell bildebolk" onclick="fokus()">'
+				//+'<img src="img/prosjekter/' + db.prosjekter[i].img +'" class="proimg" alt="proImg"/>'
+				+'<div class="careerImage proimg" style="background-image:url(\'img/prosjekter/'+ db.prosjekter[i].img +'\')"></div>'
 				+'<p class="tease">'
 					+ db.prosjekter[i].tittel
 					+ '<br>'
@@ -41,6 +45,15 @@
 				+'</p>'
 			+'</div>'
 		}
+		
+		//function fokus(){
+			
+		//}
+		
+		//function teaser(){
+		//	var fade = document.getElementsByClassName("proimg")[3].style.opacity = "0.2";
+		//	var hello = document.getElementsByClassName("tease")[3].style.opacity = "1";
+		//}
 	</script>
 </body>
 </html>
